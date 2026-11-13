@@ -1,86 +1,36 @@
+# P-ML
 
-# 🧠 ML-Architectures
+An ongoing public workspace for machine learning research, reproducible experiments, and learning from first principles. Formerly **ML-Architectures**.
 
+## From ML-Architectures to P-ML: An Open Machine Learning Research Statement
 
-![image](https://github.com/user-attachments/assets/a8d4aa8e-49ed-4b50-b802-ac73442c51b5)
+**Published:** `2026-11-14T03:16:18+08:00` (Asia/Shanghai, UTC+08:00)
 
-**ML-Architectures** is a structured knowledge project designed to deeply explain how classic machine learning models work — from their internal mathematical structures, loss functions, optimization processes, to complete training pipelines.
+ML-Architectures began in April 2025 as a small teaching and learning project about what happens inside machine learning models. P-ML keeps those foundations and expands them into an ongoing public home for learning, original ML research, reproductions, and curated resources. We will publish what we try, what we measure, what fails, and what remains open to question.
 
-This project helps you understand:
-- What exactly a model like Linear Regression, SVM, or XGBoost is doing internally
-- How gradient-based optimization adjusts parameters
-- How to build, train, and evaluate models from scratch
-- The core intuition behind loss functions and optimizers
+P University is a **private** research initiative. P-ML may cite or adapt selected material from its Department of CSDSAI when it has been cleared for public release. This does not open the private workspace or its underlying materials. P-ML also conducts research directly in public, independently of that source.
 
----
+Bring your own algorithms, research questions, replication attempts, negative results, or useful ML resources. Use Discussions to explore ideas, Issues to propose submissions or track concrete work, and pull requests to add entries or reproducible research.
 
+[Archived statement](update/2026-11-14-p-ml-research-statement.md)
 
-## 📦 What’s inside
+## Explore the repository
 
-```
-ML-Architectures/
-├── models/                 # Each ML model has its own module
-│   ├── linear_regression/
-│   ├── logistic_regression/
-│   ├── decision_tree/
-│   ├── random_forest/
-│   ├── xgboost/
-│   ├── knn/
-│   ├── svm/
-│   ├── kmeans/
-│   └── neural_network/
-├── optimizers/             # Optimization methods explained
-│   ├── gradient_descent.md
-│   ├── sgd.md
-│   ├── adam.md
-│   └── comparison.md
-├── notes/                  # Key concepts: loss functions, regularization, etc.
-│   ├── loss_functions.md
-│   ├── regularization.md
-│   └── training_pipeline.md
-├── diagrams/               # Visual explanations, architecture charts
-├── LICENSE
-└── README.md
-```
+| Area | What belongs here |
+| --- | --- |
+| [`ml-paper/`](ml-paper/) | Papers, reading notes, and replication leads |
+| [`ml-project/`](ml-project/) | Original experiments, reproductions, and runnable learning projects |
+| [`ml-repo/`](ml-repo/) | Curated ML code repositories, with notes on what to inspect or run |
+| [`ml-website/`](ml-website/) | Public courses, documentation, tutorials, and other learning sites |
+| [`models/`](models/) | Legacy architecture notes, starting with [linear regression](models/linear_regression/readme.md) |
+| [`update/`](update/) | Dated statements and changes to the research direction |
 
----
+No installation is needed to read the notes or indexes. The [first experiment](ml-project/linear-regression-feature-scaling/) runs with Python 3.11+ and the standard library. Check each future project's README for its own requirements.
 
-## 🎯 Target audience
+## Contribute
 
-- ML learners who want to go beyond APIs and understand what’s under the hood
-- Aspiring researchers, data scientists, or quant developers
-- Interview candidates preparing for deep algorithm/model questions
+- [Discussions](https://github.com/pengpengyi92/P-ML/discussions): share an algorithm, ask a research question, or discuss a paper.
+- [Call for contributions (#1)](https://github.com/pengpengyi92/P-ML/issues/1): suggest a paper, project, repository, or website. Use [Issues](https://github.com/pengpengyi92/P-ML/issues) for corrections or concrete experiment proposals.
+- Pull requests: follow [CONTRIBUTING.md](CONTRIBUTING.md). Both maintainer-curated and community submissions are welcome.
 
----
-
-## 📘 Models covered (will expand weekly)
-
-- Linear Regression (✅ in progress)
-- Logistic Regression
-- Decision Tree & Random Forest
-- KNN
-- XGBoost / LightGBM
-- Support Vector Machines
-- KMeans (unsupervised)
-- Neural Networks (basic MLP)
-
----
-
-## ⚙️ Tools
-
-- Core math implemented in Python/Numpy
-- Visualizations via Matplotlib & Plotly
-- Optional PyTorch modules for more complex experiments
-
----
-
-## 🧠 Vision
-
-> To build a model-by-model, optimizer-by-optimizer understanding of machine learning from the ground up — as simply, deeply, and reproducibly as possible.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.  
-© 2025 Pengyi Peng. All rights reserved.
+See [AGENTS.md](AGENTS.md) for project history, evidence standards, and the public/private boundary; [TODO.md](TODO.md) for the research backlog; and [LICENSE](LICENSE) for repository terms. Linked third-party resources retain their own terms.
