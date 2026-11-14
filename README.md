@@ -16,6 +16,11 @@ Bring your own algorithms, research questions, replication attempts, negative re
 
 ## Explore the repository
 
+Start with the [10-repository ML reading guide](ml-repo/README.md): classical
+models, deep learning, LLM tools, data and evaluation. Each card states why it
+belongs in P-ML, pinned source entry points, learning questions and unrun exercises.
+[repo/](repo/README.md) is a navigation alias; ml-repo/ remains canonical.
+
 | Area | What belongs here |
 | --- | --- |
 | [`ml-paper/`](ml-paper/) | Papers, reading notes, and replication leads |

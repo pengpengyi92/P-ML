@@ -1,0 +1,40 @@
+# XGBoost — P-ML 视角
+
+**Last reviewed:** 2026-11-14 (Asia/Shanghai). **Profile:** ml.
+
+[官方仓库](https://github.com/dmlc/xgboost) · [固定提交 README](https://github.com/dmlc/xgboost/blob/293cad1a89ab749e3266e190c68118af2db09982/README.md).
+来源提交：`293cad1a89ab749e3266e190c68118af2db09982`；逐条时间与公开元数据见 [catalog.json](../catalog.json)。
+
+## 用途
+
+梯度提升树训练与接口实现。
+
+## 为何在本仓库收录
+
+提供经典 tabular ML 对照，研究 loss、树复杂度与早停。 这是目录编者的选题理由，不是已测量的优越性或官方背书。
+
+## 源码入口
+
+以下路径已在上述固定 Git tree 中核对；路径存在不等于本轮完成源码审计。
+
+1. [源码入口 1](https://github.com/dmlc/xgboost/blob/293cad1a89ab749e3266e190c68118af2db09982/python-package/xgboost/training.py)：`python-package/xgboost/training.py`。
+2. [源码入口 2](https://github.com/dmlc/xgboost/blob/293cad1a89ab749e3266e190c68118af2db09982/src/learner.cc)：`src/learner.cc`。
+
+## 学习路线
+
+先读官方 README 与许可，再按上述入口追踪一个输入、状态变化和输出；对照其测试，写下问题：**改进来自模型还是验证集反复调参？**
+
+## 练习（未执行）
+
+固定 tabular synthetic fixture，比较常数 baseline 与小树模型，限制树深、验证轮次和调参预算。 本轮新增练习的实测效果、性能和学习收益均为 **NOT RUN / UNMEASURED**，不沿用旧 PR 的局部测试冒充新实验。
+
+## 贡献证据
+
+本轮按本项目、作者 pengpengyi92、public PR 做有界检索，未捕获可列出的 PR。此条定位为 **官方来源核对后的阅读候选**，不声称曾提交、被采用或已独立复现。
+
+## 许可与限制
+
+GitHub 许可证信号：**Apache-2.0**。 阅读 [上游许可](https://github.com/dmlc/xgboost/blob/293cad1a89ab749e3266e190c68118af2db09982/LICENSE)；API 分类不替代许可原文、第三方依赖、数据/模型权重和商用条件。
+本次没有安装/运行此库、调用收费服务、下载模型、签署新 CLA/DCO 或提交上游改动。公开 PR 仅作学习案例；不构成就业、团队合作或生产采用声明。
+
+[分类路线](README.md) · [本目录总入口](../README.md) · [学习与证据模板](../HOW_TO_STUDY.md)

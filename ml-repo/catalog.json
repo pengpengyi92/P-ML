@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "project": "P-ML",
+  "profile": "ml",
+  "catalog_root": "ml-repo",
+  "last_reviewed": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "scope": "模型方法、训练、预处理、数据切分、指标和可复现实验",
+  "complete_ecosystem_inventory": false,
+  "entries": [
+    {
+      "slug": "pytorch",
+      "title": "PyTorch",
+      "category": "deep-learning",
+      "card": "deep-learning/pytorch.md",
+      "summary": "Tensor、autograd 与神经网络模块的核心框架。",
+      "inclusion_reason": "学习模型、梯度、损失和训练状态的基础，不把框架熟悉度当成模型效果。",
+      "learning_question": "autograd 与模块状态是否按预期变化？",
+      "planned_exercise": "对照小张量手算梯度；记录 train/eval、随机种子和 dtype，先 CPU，GPU 成本另行审批。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "pytorch/pytorch",
+        "requested_name": "pytorch/pytorch",
+        "url": "https://github.com/pytorch/pytorch",
+        "private": false,
+        "default_branch": "main",
+        "head": "1a6d2a8249e0b28c119661a8c424f9c145fbe1bd",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:09.225985+08:00",
+        "license_signal": "NOASSERTION",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "torch/nn/modules/module.py",
+          "torch/autograd/__init__.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:pytorch/pytorch author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 3,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/pytorch/pytorch/pull/192439",
+            "number": 192439,
+            "title": "[typing] Export torch.distributed.algorithms symbols",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-05T06:39:24Z"
+          },
+          {
+            "url": "https://github.com/pytorch/pytorch/pull/193055",
+            "number": 193055,
+            "title": "[distributed] Continue socket fallback after constructor errors",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-10T05:34:44Z"
+          },
+          {
+            "url": "https://github.com/pytorch/pytorch/pull/193311",
+            "number": 193311,
+            "title": "[docs] Remove unsupported out argument from torch.linalg._powsum",
+            "state": "CLOSED_UNMERGED",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-11T21:03:04Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "scikit-learn",
+      "title": "scikit-learn",
+      "category": "classical-ml",
+      "card": "classical-ml/scikit-learn.md",
+      "summary": "经典机器学习、预处理与模型选择。",
+      "inclusion_reason": "建立传统 ML 的 baseline、split、pipeline 和评估习惯，再谈复杂模型。",
+      "learning_question": "如何避免预处理和交叉验证泄漏？",
+      "planned_exercise": "固定合成分类样本，预处理只在训练集拟合；比较 Pipeline 与错误全样本预处理的差异。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "scikit-learn/scikit-learn",
+        "requested_name": "scikit-learn/scikit-learn",
+        "url": "https://github.com/scikit-learn/scikit-learn",
+        "private": false,
+        "default_branch": "main",
+        "head": "ee56c8b5d809dc7b970a140ed501269b63c69cf8",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:16.172052+08:00",
+        "license_signal": "BSD-3-Clause",
+        "license_path": "COPYING",
+        "readme_path": "README.rst",
+        "tree_truncated": false,
+        "entry_paths": [
+          "sklearn/linear_model/_base.py",
+          "sklearn/model_selection/_split.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:scikit-learn/scikit-learn author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "tensorflow",
+      "title": "TensorFlow",
+      "category": "deep-learning",
+      "card": "deep-learning/tensorflow.md",
+      "summary": "张量计算、自动微分和训练/部署相关工具。",
+      "inclusion_reason": "与 PyTorch 对照训练/自动微分概念，保留不同框架的接口和构建条件。",
+      "learning_question": "自动微分与执行模式的边界在哪里？",
+      "planned_exercise": "先跟踪一个小型梯度例子，再记录 eager/graph、设备与版本；不要直接进行完整源码构建。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "tensorflow/tensorflow",
+        "requested_name": "tensorflow/tensorflow",
+        "url": "https://github.com/tensorflow/tensorflow",
+        "private": false,
+        "default_branch": "master",
+        "head": "d51ea3e9d9a822d276f148c256b0a42f708c3efd",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:26.972018+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "tensorflow/python/eager/backprop.py",
+          "tensorflow/python/framework/ops.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:tensorflow/tensorflow author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 1,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/tensorflow/tensorflow/pull/124304",
+            "number": 124304,
+            "title": "Improve tf.numpy.sign unsupported argument errors",
+            "state": "CLOSED_UNMERGED",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-09-07T09:24:26Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "transformers",
+      "title": "Transformers",
+      "category": "llm-tooling",
+      "card": "llm-tooling/transformers.md",
+      "summary": "模型接口、训练和文本生成工具。",
+      "inclusion_reason": "研究模型接口、tokenization、loss mask 与训练/推理一致性。",
+      "learning_question": "训练 loss 和生成输出的输入口径是否一致？",
+      "planned_exercise": "先读配置、tokenizer、训练与生成路径，设计 padding/mask 的合成边界用例；模型下载或推理尚未执行。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "huggingface/transformers",
+        "requested_name": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "private": false,
+        "default_branch": "main",
+        "head": "0d7a6219179b24586089ae81b45cf725078e681f",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:35.091618+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "src/transformers/trainer.py",
+          "src/transformers/generation/utils.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:huggingface/transformers author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "datasets",
+      "title": "Datasets",
+      "category": "data-and-evaluation",
+      "card": "data-and-evaluation/datasets.md",
+      "summary": "数据加载、转换、分片与 Arrow 数据集工作流。",
+      "inclusion_reason": "把数据版本、split、shuffle、预处理和泄漏控制视为模型实验的一部分。",
+      "learning_question": "数据转换是否跨越训练/审计边界？",
+      "planned_exercise": "用小型虚构行设计 map/filter 与 split 过程；先确定样本/来源分组，再拟合转换。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "huggingface/datasets",
+        "requested_name": "huggingface/datasets",
+        "url": "https://github.com/huggingface/datasets",
+        "private": false,
+        "default_branch": "main",
+        "head": "efc82474bc990f5872226dca56457536c9a880e9",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:42.212224+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "src/datasets/arrow_dataset.py",
+          "src/datasets/load.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:huggingface/datasets author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "evaluate",
+      "title": "Evaluate",
+      "category": "data-and-evaluation",
+      "card": "data-and-evaluation/evaluate.md",
+      "summary": "指标模块与评估组织工具。",
+      "inclusion_reason": "学习指标定义、分类不平衡与评估接口，而非只优化单一排行榜数值。",
+      "learning_question": "相同预测在不同 averaging 下代表什么？",
+      "planned_exercise": "用手算混淆矩阵对照 accuracy/macro 类指标；记录标签、平均方式、样本权重与不确定性。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "huggingface/evaluate",
+        "requested_name": "huggingface/evaluate",
+        "url": "https://github.com/huggingface/evaluate",
+        "private": false,
+        "default_branch": "main",
+        "head": "a5db2ad54aaeadf15c7aa1f056bc6f7bbeeb7e5f",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:48.537207+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "src/evaluate/module.py",
+          "src/evaluate/evaluator/base.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:huggingface/evaluate author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "peft",
+      "title": "PEFT",
+      "category": "llm-tooling",
+      "card": "llm-tooling/peft.md",
+      "summary": "参数高效微调与 adapter 相关工具。",
+      "inclusion_reason": "学习 LoRA/adapter 的实现和实验隔离，避免把参数更少误写成效果更优。",
+      "learning_question": "是否只更新了实验声明中的参数？",
+      "planned_exercise": "先检查冻结/可训练参数、adapter 保存与加载边界，列出受控 ablation；未训练模型。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "huggingface/peft",
+        "requested_name": "huggingface/peft",
+        "url": "https://github.com/huggingface/peft",
+        "private": false,
+        "default_branch": "main",
+        "head": "66a7c305bac9d7f8183b1f158280b77be971a3d4",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:56.086412+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "src/peft/peft_model.py",
+          "src/peft/tuners/lora/model.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:huggingface/peft author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "safetensors",
+      "title": "Safetensors",
+      "category": "data-and-evaluation",
+      "card": "data-and-evaluation/safetensors.md",
+      "summary": "张量文件格式及语言绑定。",
+      "inclusion_reason": "把权重序列化、dtype 与模型复现连接起来。",
+      "learning_question": "字节布局和跨平台 round-trip 是否一致？",
+      "planned_exercise": "设计 dtype/shape/endianness round-trip 和损坏文件负面对照；不把某格式当成整条模型供应链安全证明。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "safetensors/safetensors",
+        "requested_name": "safetensors/safetensors",
+        "url": "https://github.com/safetensors/safetensors",
+        "private": false,
+        "default_branch": "main",
+        "head": "9e6f4d6c7af8c63ac791ab1bfdd58d2de02fbaa4",
+        "archived": false,
+        "observed_at": "2026-11-14T15:34:03.874625+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "safetensors/src/tensor.rs",
+          "bindings/python/py_src/safetensors/torch.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:safetensors/safetensors author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 1,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/safetensors/safetensors/pull/830",
+            "number": 830,
+            "title": "Fix big-endian data in threadable serialization test",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-08-23T05:55:31Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "xgboost",
+      "title": "XGBoost",
+      "category": "classical-ml",
+      "card": "classical-ml/xgboost.md",
+      "summary": "梯度提升树训练与接口实现。",
+      "inclusion_reason": "提供经典 tabular ML 对照，研究 loss、树复杂度与早停。",
+      "learning_question": "改进来自模型还是验证集反复调参？",
+      "planned_exercise": "固定 tabular synthetic fixture，比较常数 baseline 与小树模型，限制树深、验证轮次和调参预算。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "dmlc/xgboost",
+        "requested_name": "dmlc/xgboost",
+        "url": "https://github.com/dmlc/xgboost",
+        "private": false,
+        "default_branch": "master",
+        "head": "293cad1a89ab749e3266e190c68118af2db09982",
+        "archived": false,
+        "observed_at": "2026-11-14T15:34:10.000528+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "python-package/xgboost/training.py",
+          "src/learner.cc"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:dmlc/xgboost author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "lightgbm",
+      "title": "LightGBM",
+      "category": "classical-ml",
+      "card": "classical-ml/lightgbm.md",
+      "summary": "梯度提升树学习框架。",
+      "inclusion_reason": "研究树学习实现与复杂度控制，保留与其他 tabular baseline 的同口径比较。",
+      "learning_question": "同题对照的输入和成本是否可比？",
+      "planned_exercise": "与 XGBoost 使用同一数据切分与指标，记录类别处理、缺失值和资源预算；不预设谁更快。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "lightgbm-org/LightGBM",
+        "requested_name": "microsoft/LightGBM",
+        "url": "https://github.com/lightgbm-org/LightGBM",
+        "private": false,
+        "default_branch": "main",
+        "head": "53350cd896c6fd76d2cc03354f452f18646830e9",
+        "archived": false,
+        "observed_at": "2026-11-14T15:34:37.985803+08:00",
+        "license_signal": "MIT",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "python-package/lightgbm/engine.py",
+          "src/boosting/gbdt.cpp"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:lightgbm-org/LightGBM author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    }
+  ]
+}

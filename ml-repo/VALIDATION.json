@@ -1,0 +1,23 @@
+{
+  "project": "P-ML",
+  "observed_date": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "source_base": "ec8575e0b52e747c1b9b5ae460344cccd3858066",
+  "catalog_sha256": "be9c40eb0d55f28fec5f2411f425f17308acf206b54eac7f32e98f8e88217ec0",
+  "environment": {
+    "os": "Windows",
+    "python": "3.12.14",
+    "node": "NOT_REQUIRED"
+  },
+  "catalog_check": {
+    "command": "python -m unittest discover -s tests -p test_repo_catalog.py -v",
+    "exit_code": 0,
+    "passed": 10,
+    "failed": 0
+  },
+  "legacy_scope": "目录10项；既有 feature-scaling 实验3项，分别通过",
+  "third_party_runtime": "NOT RUN",
+  "learning_and_performance_gains": "UNMEASURED",
+  "remote_ci": "NOT OBSERVED at local acceptance",
+  "publication": "Git commit/push/readback verified separately at handoff"
+}

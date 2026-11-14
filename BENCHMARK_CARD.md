@@ -1,5 +1,16 @@
 # P-ML relaunch — benchmark card
 
+## Repository catalog — 2026-11-14
+
+| Step | Evidence |
+| --- | --- |
+| Baseline | No role-specific multi-repository AI reading routes; existing project code and prior indexes preserved. |
+| Change |10 project-specific cards, official source pins/PR states, license limits, study plans and catalog-only CI. |
+| Measure |10 local catalog tests; 目录10项；既有 feature-scaling 实验3项，分别通过. [Observed delivery](update/2026-11-14-ai-repository-guides.md). |
+| Result |Catalog checks PASS; runtime/model/learning/throughput improvements NOT RUN / UNMEASURED, not claimed from curation. |
+| Trade-off |Curated bounded sample, changing paths/permissions and PR history; no full ecosystem audit or third-party certification. |
+| Next Action |One fixed-fixture study with independent baseline and negative controls; no model/GPU spending without approval. |
+
 **Version:** 2026-11-14 relaunch. [Experiment and commands](ml-project/linear-regression-feature-scaling/).
 
 | Step | Evidence |

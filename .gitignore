@@ -1,4 +1,6 @@
 # Compiled
+__pycache__/
+*.pyc
 *.elc
 
 # Packaging
