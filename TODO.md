@@ -8,7 +8,8 @@
 - [x] Record CORL fork/original, archives, deprecated/migrated interfaces, license exceptions and additional files.
 - [x] Add focus report, source/experiment protocols and constrained collector reuse.
 - [x] Complete47 catalog tests,3 original experiment tests and deterministic old/new rendering.
-- [ ] Publish scoped changes and verify remote blobs/CI.
+- [x] Publish content `f27647a`;21 remote blobs +3 key-file byte hashes match.
+  Hosted CI43675358602 SUCCESS with47 catalog +3 original experiment tests.
 - [ ] P1: Choose a gradient, geometry or environment-contract fixture with independent oracle and negative controls.
 
 ## P0 - ML ecosystem expansion (2026-11-15)
