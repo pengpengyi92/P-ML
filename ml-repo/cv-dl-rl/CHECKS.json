@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "title": "CV / DL / RL local verification receipt",
+  "timezone": "Asia/Shanghai",
+  "status": "LOCAL_VALIDATION_PASS",
+  "recorded_at": "2026-11-15T12:05:38+08:00",
+  "baseline_commit": "205b53bfc0f88d41bdad94dd2f46d9b8c10eb4d2",
+  "scope": "Additive public-source CV/DL/RL catalog; not a model benchmark or global inventory",
+  "counts": {"new_unique": 43, "previous_unique": 73, "combined_unique": 116,
+    "computer-vision": 16, "deep-learning": 11, "reinforcement-learning": 16,
+    "new_source_files": 89, "archived": 2, "license_classifier_exceptions": 9,
+    "license_clarification_reference": 1},
+  "source_snapshot": {"path": "ml-repo/cv-dl-rl/snapshot.json",
+    "sha256": "2867982492edd317a0d0c6ce9bec1584e66acc11d946ac0e8d58deae2eaf9478",
+    "byte_and_git_blob_verification": "PASS",
+    "resumed_api_observations_keep_original_timestamps": true},
+  "environment": {"os": "Windows", "python": "3.11.3", "dependencies_installed": []},
+  "checks": [
+    {"command": "python -m unittest discover -s tests -v", "exit_code": 0,
+      "passed": 47, "new": 15, "retained": 32, "completed_at": "2026-11-15T12:05:37+08:00",
+      "raw_local_transcript_sha256": "b04ddddb7b811a87a6536f3df79f30e8bb62d7305e010dcefb8a1f70b30ea395"},
+    {"command": "python -m unittest discover -s ml-project/linear-regression-feature-scaling -v",
+      "exit_code": 0, "passed": 3, "completed_at": "2026-11-15T12:05:38+08:00",
+      "raw_local_transcript_sha256": "f66e78db1f590388ef9e1023980d51c278a248a2b569f5cf25b965ba7ccc94e7"},
+    {"command": "python scripts/collect_ml_ecosystem.py --render", "exit_code": 0,
+      "result": "Frozen original catalog Markdown hashes unchanged"},
+    {"command": "python scripts/collect_ml_ecosystem.py --catalog-dir ml-repo/cv-dl-rl --render",
+      "exit_code": 0, "result": "New catalog Markdown hashes unchanged"},
+    {"command": "git diff --exit-code -- ml-repo/ecosystem ml-repo/catalog.json ml-repo/VALIDATION.json ml-repo/classical-ml ml-repo/deep-learning ml-repo/llm-tooling ml-repo/data-and-evaluation ml-project models tests/test_ml_ecosystem.py tests/test_repo_catalog.py",
+      "exit_code": 0, "result": "Prior snapshots/cards/receipts/tests/experiment preserved"}
+  ],
+  "code_and_config_sha256": {
+    "scripts/collect_ml_ecosystem.py": "1765fdccdeeb6f31b7c8377b5f7e70703a0b50a96240ee7ccc0fbed1dec9b113",
+    "tests/test_cv_dl_rl_catalog.py": "ac6f97e9b9de66e96e86c627ad7ecb03d43e8faf2cf1b9e0c55ddf43d2aec45c",
+    "ml-repo/cv-dl-rl/selection.json": "a5df610525507a5050ac5c31673c7076f4ed7a503ac87db088fcea58aed88d93",
+    "ml-repo/cv-dl-rl/taxonomy.json": "f736a68e57dbef40a0c1135fe337d45223718c662c3957f490441f864134e7ef"
+  },
+  "initial_failures_and_corrections": [
+    {"kind": "SOURCE_GATE", "target": "corl-team/CORL", "result": "Fork rejected as primary; parent inspected and archived original tinkoff-ai/CORL selected"},
+    {"kind": "TEST_FALSE_POSITIVE", "command": "python -m unittest discover -s tests -v", "passed": 46, "failed": 1,
+      "cause": "Case-sensitive keyword did not match existing Negative control heading", "correction": "Case-insensitive terminology match, no requirement removed; final47 PASS"}
+  ],
+  "raw_artifact_policy": "Full public-source review/cache and test transcripts stay ignored locally; hashes are receipts, not public downloadable artifacts",
+  "hosted_ci_at_local_receipt": "NOT_OBSERVED",
+  "upstream_runtime": "NOT_RUN",
+  "model_quality_cost_learning_gain": "UNMEASURED",
+  "production_and_real_world_safety": "NOT_ASSESSED",
+  "runtime_model_calls": 0,
+  "development_model_token_cost": "UNMEASURED"
+}

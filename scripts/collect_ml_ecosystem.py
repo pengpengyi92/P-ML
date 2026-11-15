@@ -34,6 +34,21 @@ def now():
     return datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds")
 
 
+def configure_catalog(directory):
+    global DEST, CATEGORIES
+    directory = directory.resolve()
+    if not directory.is_relative_to((ROOT / "ml-repo").resolve()) or directory == (ROOT / "ml-repo").resolve():
+        raise ValueError("Catalog must be a child of this project's ml-repo/")
+    taxonomy = json.loads((directory / "taxonomy.json").read_text(encoding="utf-8"))
+    if not isinstance(taxonomy, dict) or not taxonomy:
+        raise ValueError("A nonempty taxonomy is required")
+    for key, value in taxonomy.items():
+        if not re.fullmatch(r"[a-z][a-z0-9-]*", key) or not isinstance(value, list) or len(value) != 2 or not all(isinstance(x, str) and x.strip() for x in value):
+            raise ValueError("Invalid taxonomy key/title/dimension")
+    DEST = directory
+    CATEGORIES = {key: tuple(value) for key, value in taxonomy.items()}
+
+
 def validate_selection(data):
     seen = set()
     if data.get("complete_ecosystem_inventory") is not False:
@@ -138,19 +153,26 @@ def collect(review_dir, resume=False):
             license_file = next((roots[x] for x in ("license", "license.txt", "license.md", "licence", "licence.txt", "copying", "copying.txt", "license.rst") if x in roots), None)
             if not readme:
                 raise ValueError("No root README; inspect explicitly: " + repo)
-            pending.append((row, info, head, readme, license_file))
+            specs = [("readme", readme)]
+            if license_file:
+                specs.append(("license", license_file))
+            for index, path in enumerate(row.get("additional_root_sources", [])):
+                if not isinstance(path, str) or "/" in path or "\\" in path or path.casefold() not in roots:
+                    raise ValueError("Additional source must be an observed root file: " + str(path))
+                specs.append((f"additional{index}", roots[path.casefold()]))
+            pending.append((row, info, head, specs, license_file))
             owner, name = repo.split("/")
             expressions = []
-            for label, source in (("readme", readme), ("license", license_file)):
+            for label, source in specs:
                 if source:
                     expressions.append(label + ':object(expression:' + json.dumps(head + ":" + source["name"]) + '){... on Blob{oid byteSize text isBinary}}')
             source_fields.append(f'r{i}:repository(owner:{json.dumps(owner)},name:{json.dumps(name)})' + "{" + " ".join(expressions) + "}")
         sources = query_github("query{" + " ".join(source_fields) + "}", cache, resume)
-        for i, (row, info, head, readme, license_file) in enumerate(pending):
+        for i, (row, info, head, specs, license_file) in enumerate(pending):
             repo = info["nameWithOwner"]
             record = sources["data"][f"r{i}"]
             pins = []
-            for label, source in (("readme", readme), ("license", license_file)):
+            for label, source in specs:
                 if source:
                     pins.append({"kind": label, **source_blob(repo, head, source["name"], record[label], source["oid"])})
                     (review_dir / (repo.replace("/", "__") + "__" + label + ".txt")).write_text(record[label]["text"], encoding="utf-8")
@@ -193,8 +215,16 @@ def render():
                 rights += " / " + cell(row["source_review_note"])
             if row["reuse_policy"] == "restricted-noncommercial-reference":
                 rights += " / REFERENCE ONLY: NONCOMMERCIAL"
+            if row["reuse_policy"] == "reference-only-license-clarification":
+                rights += " / REFERENCE ONLY: CLARIFY LICENSE"
+            for extra in row["sources"]:
+                if extra["kind"].startswith("additional"):
+                    rights += f" / [{extra['path']}]({extra['url']})"
             state = "ARCHIVED" if row["archived"] else "not archived (not a support promise)"
-            lines.append(f"| [{row['repository']}]({row['url']}) | {cell(row['use'])}；[固定 README]({readme['url']})；[版本树]({row['url']}/tree/{row['head']}) | {rights}; {state} | {cell(row['boundary'])} |")
+            use = cell(row["use"])
+            if row.get("role"):
+                use = f"`{cell(row['role'])}` · " + use
+            lines.append(f"| [{row['repository']}]({row['url']}) | {use}；[固定 README]({readme['url']})；[版本树]({row['url']}/tree/{row['head']}) | {rights}; {state} | {cell(row['boundary'])} |")
         (DEST / (category + ".md")).write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
     counts = {key: sum(key in row["categories"] for row in rows) for key in CATEGORIES}
     print(json.dumps({"unique": len(rows), "categories_nonadditive": counts,
@@ -207,10 +237,13 @@ if __name__ == "__main__":
     parser.add_argument("--collect", action="store_true")
     parser.add_argument("--render", action="store_true")
     parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--catalog-dir", type=Path, help="Additive catalog below ml-repo/, with its own taxonomy.json")
     parser.add_argument("--review-dir", type=Path, default=ROOT / ".local" / "ml-source-review")
     args = parser.parse_args()
     if not args.collect and not args.render:
         parser.error("Choose --collect and/or --render")
+    if args.catalog_dir:
+        configure_catalog(ROOT / args.catalog_dir)
     if args.collect:
         collect(args.review_dir, args.resume)
     if args.render:

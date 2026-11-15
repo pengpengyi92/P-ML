@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "title": "P-ML computer vision, deep learning and reinforcement learning focus expansion",
+  "complete_ecosystem_inventory": false,
+  "timezone": "Asia/Shanghai",
+  "baseline_catalog": "../ecosystem/snapshot.json",
+  "selection": "Additive primary-source selection. Preserve the frozen 73-project catalog; distinguish algorithms, educational code, training components, environments, simulators and dataset tooling.",
+  "entries": [
+    {
+      "repository": "opencv/opencv",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "library",
+      "use": "图像 I/O、几何、特征和传统视觉算法",
+      "boundary": "传统 CV 底座，不是纯 DL 框架；编解码器、第三方模块和专利需单独核查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "opencv/opencv_contrib",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "extensions",
+      "use": "OpenCV 扩展模块及配套构建",
+      "boundary": "与主库版本匹配；模块级依赖、实验状态和许可分别检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "scikit-image/scikit-image",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "library",
+      "use": "图像处理、形态学、分割和测量",
+      "boundary": "dtype、强度范围和坐标约定会改变结果；不是预训练模型合集。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 LICENSE 为按文件列示的 BSD/其他组件许可清单，API NOASSERTION 不等于无许可。"
+    },
+    {
+      "repository": "open-mmlab/mmpretrain",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "training-toolkit",
+      "use": "图像分类、视觉表征与预训练配置",
+      "boundary": "权重/数据单独授权，预训练与下游测试不能混用。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "open-mmlab/mmpose",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "training-toolkit",
+      "use": "关键点、人体姿态和姿态估计协议",
+      "boundary": "标注定义、关键点可见性、主体隔离和评价口径要固定。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "open-mmlab/mmtracking",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "research-toolkit",
+      "use": "多目标/单目标跟踪、视频任务配置",
+      "boundary": "先查维护/归档状态与依赖；按视频序列切分，不能随机拆相邻帧。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/segment-anything",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "research-model",
+      "use": "提示式图像分割与 mask 管线",
+      "boundary": "不是目标类别识别器；提示来源、权重、数据和评估协议独立。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/sam2",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "research-model",
+      "use": "图像/视频分割、跨帧记忆和交互",
+      "boundary": "固定 README 有权重/训练/demo 条款及字体/第三方例外，不能只看根许可证。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 README 对代码/训练/checkpoint 的 Apache 条款、字体 OFL 与额外 cc_torch 许可分别说明。",
+      "additional_root_sources": [
+        "LICENSE_cctorch"
+      ]
+    },
+    {
+      "repository": "IDEA-Research/GroundingDINO",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "research-model",
+      "use": "文本条件的开放词汇目标定位",
+      "boundary": "文本提示和测试类别信息会影响成绩，零样本/微调协议必须明确。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "open-mmlab/mmrotate",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "research-toolkit",
+      "use": "旋转框目标检测和方向约定",
+      "boundary": "旋转角范围、框表示和旋转 IoU 约定必须一致；先核维护。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/pytorchvideo",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "library",
+      "use": "视频采样、变换和视频模型",
+      "boundary": "视频/主体隔离和采样时序比随机帧拆分更重要；检查当前支持。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "isl-org/Open3D",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "library",
+      "use": "点云、几何、配准和三维数据处理",
+      "boundary": "坐标系、单位和变换方向要有独立几何 oracle；不是自动可用的机器人策略。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 LICENSE 明确 MIT；API NOASSERTION 不是无许可。外部资产/数据和构建依赖单独检查。"
+    },
+    {
+      "repository": "facebookresearch/pytorch3d",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "library",
+      "use": "可微三维几何与渲染",
+      "boundary": "相机/坐标/光栅化约定、GPU 构建与许可证例外分别检查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 LICENSE 为 BSD 条款；API 未识别不应取代原文，其他文件和依赖仍需单独核查。"
+    },
+    {
+      "repository": "nerfstudio-project/nerfstudio",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "research-toolkit",
+      "use": "神经渲染、三维重建与实验管线",
+      "boundary": "训练视角/测试视角严格隔离，依赖、权重与图像采集权分开。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "training-toolkit",
+      "use": "YOLO 检测、分割、姿态和跟踪工作流",
+      "boundary": "AGPL 的开放源代码义务和商业授权选项分别看；不能简单标成非商业许可或无条件商用。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "根许可 AGPL-3.0，README 另有商业授权选项；AGPL 是开源 copyleft 而非非商业许可，按使用方式检查相应义务。"
+    },
+    {
+      "repository": "open-mmlab/mmdeploy",
+      "categories": [
+        "computer-vision"
+      ],
+      "role": "deployment",
+      "use": "视觉模型转换、后端适配和部署",
+      "boundary": "导出成功不等于数值等价；按后端和精度分别测量。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/accelerate",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "training-infrastructure",
+      "use": "设备、混合精度和分布式训练组织",
+      "boundary": "检查梯度累积、有效 batch 和缩放规则；封装不保证更快或等价。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "microsoft/DeepSpeed",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "training-infrastructure",
+      "use": "ZeRO、分布式训练与内存组织",
+      "boundary": "GPU/通信/编译依赖、checkpoint 和精度必须实测，不能套用宣传速度。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pytorch/torchtune",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "training-toolkit",
+      "use": "模型微调配方、数据与训练状态",
+      "boundary": "配方、token mask、基础权重和数据条款分别核查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pytorch/torchtitan",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "training-infrastructure",
+      "use": "大规模训练与并行策略研究",
+      "boundary": "这是大规模训练研究入口，不是单卡环境可直接复现性能的证明。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/xformers",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "components",
+      "use": "注意力算子和高效 Transformer 组件",
+      "boundary": "算子/硬件/精度覆盖和数值误差单独测试；非完整训练框架。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 LICENSE 含 BSD 三条款及其他组件通知；算子、依赖和分发条款分别核对。"
+    },
+    {
+      "repository": "karpathy/micrograd",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "educational",
+      "use": "标量自动微分、计算图与反向传播",
+      "boundary": "教学实现不是生产 DL 引擎；用手算/有限差分检查梯度。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "karpathy/minGPT",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "educational",
+      "use": "简化 GPT 结构、因果 mask 和训练",
+      "boundary": "学习实现不代表现代最优训练或生产支持；留出与权重来源仍需检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "karpathy/nanoGPT",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "educational",
+      "use": "小型 GPT 训练循环、优化和数据流",
+      "boundary": "检查 README 的后继/维护说明；简洁不等于当前推荐栈或已复现论文。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 README 的 Nov2025 更新明确称其 old/deprecated，指向 nanochat；未归档不等于当前推荐栈。"
+    },
+    {
+      "repository": "karpathy/nanochat",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "educational-and-training",
+      "use": "从数据、训练、评估到对话模型的小型完整研究栈",
+      "boundary": "nanoGPT README 指向的后继；仍须核对硬件、数据、权重和完整成本，不默认低资源可复现。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "d2l-ai/d2l-en",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "educational",
+      "use": "可运行教材、训练原理和模型实现",
+      "boundary": "教材文字与代码可能不同许可，必须区分，不能整书搬运。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 README 区分教材 CC BY-SA 4.0 与 sample/reference code 的 modified MIT；同时阅读 LICENSE-SAMPLECODE 和 LICENSE-SUMMARY，不能写成全部 Apache 或全部同许可。",
+      "additional_root_sources": [
+        "LICENSE-SAMPLECODE",
+        "LICENSE-SUMMARY"
+      ]
+    },
+    {
+      "repository": "NVIDIA/Megatron-LM",
+      "categories": [
+        "deep-learning"
+      ],
+      "role": "training-infrastructure",
+      "use": "模型/张量/流水线并行和大模型训练",
+      "boundary": "训练代码、容器、后端和 NVIDIA 组件条款分别核查；不承诺低资源适配。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 LICENSE 为 BSD 风格和文件/依赖例外的组合；API NOASSERTION 不代表 NVIDIA 容器/后端均无条件授权。"
+    },
+    {
+      "repository": "pytorch/rl",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "algorithm-toolkit",
+      "use": "TorchRL 的环境、采样、buffer 与学习器",
+      "boundary": "训练/评估 mode、并行采样和 episode 边界要固定。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "Farama-Foundation/PettingZoo",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "environment-api",
+      "use": "多智能体环境接口与 agent 生命周期",
+      "boundary": "环境 API 不是 MARL 算法；AEC/Parallel 语义和奖励分配不可混用。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "Farama-Foundation/Minari",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "dataset-tooling",
+      "use": "离线 RL 数据记录、恢复与版本",
+      "boundary": "数据工具不授予所有轨迹/环境的使用权，策略与轨迹来源须记录。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 LICENSE 声明 Farama 自有部分 MIT、其他部分保留 MIT/Apache 等通知；数据集本身的权利另核。"
+    },
+    {
+      "repository": "Farama-Foundation/D4RL",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "dataset-benchmark",
+      "use": "历史离线 RL 数据与评分协议",
+      "boundary": "先读归档/后继说明；数据迁移和归一化分数不能直接跨版本比较。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 README 指向 Gymnasium/MiniGrid/Gymnasium-Robotics 与 Minari 的迁移，并分别说明数据/代码条款；不混用新旧环境分数。"
+    },
+    {
+      "repository": "Farama-Foundation/Minigrid",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "environment",
+      "use": "部分可观测网格任务与可控 RL 实验",
+      "boundary": "用独立布局/种子测试，随机策略作为 baseline；不是现实泛化证明。",
+      "reuse_policy": "reference-only-license-clarification",
+      "source_review_note": "本次固定 LICENSE 文本出现补丁标记 @@，API 为 NOASSERTION；只作阅读参考，复用前核对完整有效许可，不自动推断授权。"
+    },
+    {
+      "repository": "openai/procgen",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "environment",
+      "use": "程序化环境与 train/test level 泛化",
+      "boundary": "区分训练/测试 level、环境构建和许可，先核维护状态。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "rail-berkeley/rlkit",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "research-toolkit",
+      "use": "强化/离线学习研究组件与实验组织",
+      "boundary": "研究代码、外部环境/数据和当前兼容性分开，不默认生产可用。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "takuseno/d3rlpy",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "algorithm-toolkit",
+      "use": "离线/在线深度 RL 算法与评估",
+      "boundary": "严格隔离离线数据与在线评估，限制在线交互预算。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "tinkoff-ai/CORL",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "research-baselines",
+      "use": "离线 RL 的算法基线与固定配置",
+      "boundary": "原始仓库已归档；corl-team/CORL 是 fork，不能据此声称原库活跃维护。数据和评分协议另核。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/mbrl-lib",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "research-toolkit",
+      "use": "基于模型的 RL、动力学与规划",
+      "boundary": "模型误差、规划预算、真实环境交互和策略回报分别计量。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/habitat-lab",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "embodied-framework",
+      "use": "具身导航/交互环境与训练任务",
+      "boundary": "环境、场景/资产数据和模拟器条款独立；仿真不证明真实部署安全。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "google-deepmind/mujoco",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "simulator",
+      "use": "物理引擎、接触、控制与仿真",
+      "boundary": "模拟器不是学习算法，模型参数/时间步和插件许可影响可复现性。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "google/brax",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "simulator-and-training",
+      "use": "加速物理仿真与 JAX RL 示例",
+      "boundary": "先查引擎/后继接口说明；吞吐、物理精度和策略质量是不同指标。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 README 明确自0.13.0仅 brax/training 活跃维护，环境转向 MuJoCo Playground，物理模拟转向 MJX/MuJoCo Warp；旧示例不代表当前推荐接口。"
+    },
+    {
+      "repository": "Unity-Technologies/ml-agents",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "environment-and-training",
+      "use": "Unity 环境接口、训练与多智能体研究",
+      "boundary": "开源 Python/训练代码不自动授予 Unity 编辑器、资产或商业服务权利。",
+      "reuse_policy": "review-code-data-weights-components",
+      "source_review_note": "固定 LICENSE 明确 Apache-2.0，API NOASSERTION 不是无许可；Unity 编辑器、资产和其他组件条款独立。"
+    },
+    {
+      "repository": "google-deepmind/acme",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "research-framework",
+      "use": "分布式 RL 的 actor、learner 与环境组织",
+      "boundary": "先检查维护与依赖；actor/learner 数据滞后及评估预算必须显式。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "Farama-Foundation/HighwayEnv",
+      "categories": [
+        "reinforcement-learning"
+      ],
+      "role": "environment",
+      "use": "驾驶决策仿真与可控 RL 任务",
+      "boundary": "只是仿真研究，不是安全驾驶验证；固定场景、随机种子和失败指标。",
+      "reuse_policy": "review-code-data-weights-components"
+    }
+  ]
+}

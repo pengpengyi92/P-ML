@@ -1,5 +1,12 @@
 # Machine Learning — 模型、数据与评估
 
+## Priority focus / CV · DL · RL
+
+[CV/DL/RL重点扩展](cv-dl-rl/README.md)：43个新增主仓库，CV16、DL11、RL16；与原73库
+去重后合计116。DL作为长期重点，覆盖原理、训练、微调、并行与组件；CV覆盖图像/视频/3D，
+RL区分算法、数据、环境与模拟器。[报告](../report/2026-11-15-cv-dl-rl.md) ·
+[实验协议](cv-dl-rl/EXPERIMENT_PROTOCOL.md)。本轮未安装/运行上游软件或模型。
+
 ## Current ecosystem expansion / 2026-11-15
 
 [73个主仓库、15条路线的综合入口](ecosystem/README.md)：监督、无监督、自监督/半监督、

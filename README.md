@@ -16,6 +16,12 @@ Bring your own algorithms, research questions, replication attempts, negative re
 
 ## Explore the repository
 
+**Priority expansion · [CV / DL / RL:43 new primary repositories](ml-repo/cv-dl-rl/README.md)**
+adds16 computer-vision,11 deep-learning and16 reinforcement-learning projects. The
+combined canonical catalog now has116 unique projects. Deep learning is a continuing
+focus: gradients, training state, fine-tuning, parallelism and reliable evaluation.
+[Focus report](report/2026-11-15-cv-dl-rl.md). Source/rights checks are not model execution.
+
 **2026-11-15 · [ML ecosystem map:73 primary repositories /15 routes](ml-repo/ecosystem/README.md)**
 covers frameworks, supervised/unsupervised/self-supervised learning, RL, vision, audio,
 probabilistic/time-series/graph learning, evaluation and serving. Source pins, rights,

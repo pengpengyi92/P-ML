@@ -1,5 +1,16 @@
 # P-ML relaunch — benchmark card
 
+## CV / DL / RL focus expansion - 2026-11-15
+
+| Step | Evidence |
+| --- | --- |
+| Baseline |73 primary projects /146 source files and32 catalog tests; original feature-scaling experiment with3 tests. |
+| Change |43 non-overlapping primary projects (CV16 /DL11 /RL16),89 new pinned source files, role-based routes, rights/maintenance review and proposed CV/DL/RL studies; combined116 unique repos. |
+| Measure |15 new contracts plus32 existing; source/role/non-overlap/permission/path checks, old/new deterministic render, unchanged original experiment and source preservation. Actual final counts/hashes in ml-repo/cv-dl-rl/CHECKS.json. |
+| Result |47 catalog tests PASS (15 new +32 retained),3 original experiment tests PASS; old/new rendering deterministic and frozen source/experiment history unchanged. First46/47 run had a case-sensitive protocol keyword false positive, corrected without removing the requirement. No model result inferred from catalog counts. |
+| Trade-off |Bounded selection; CORL original/MBRL-Lib archived, other deprecated interfaces and9 API-license exceptions explicit. Upstream runtime, throughput, accuracy, cost, learning benefit and real-world safety NOT_RUN / UNMEASURED. |
+| Next Action |One pre-registered synthetic gradient/geometry/environment study; compare an independent baseline under fixed budgets before increasing implementation scope. |
+
 ## ML ecosystem catalog - 2026-11-15
 
 | Step | Evidence |

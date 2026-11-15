@@ -1,5 +1,16 @@
 # P-ML TODO
 
+## P0 - CV / DL / RL priority expansion (2026-11-15)
+
+- [x] Capture43 new primary repositories /89 pinned files; verify non-overlap and116 total.
+- [x] Separate16 CV /11 DL /16 RL, with explicit algorithm/education/infrastructure/data/environment roles.
+- [x] Preserve frozen73 sources,15 routes,10 cards, prior receipts and existing experiment.
+- [x] Record CORL fork/original, archives, deprecated/migrated interfaces, license exceptions and additional files.
+- [x] Add focus report, source/experiment protocols and constrained collector reuse.
+- [x] Complete47 catalog tests,3 original experiment tests and deterministic old/new rendering.
+- [ ] Publish scoped changes and verify remote blobs/CI.
+- [ ] P1: Choose a gradient, geometry or environment-contract fixture with independent oracle and negative controls.
+
 ## P0 - ML ecosystem expansion (2026-11-15)
 
 - [x] Collect73 canonical public primary repositories and146 byte-verified README/license pins.

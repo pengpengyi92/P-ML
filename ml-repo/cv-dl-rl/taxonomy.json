@@ -1,0 +1,14 @@
+{
+  "computer-vision": [
+    "计算机视觉：图像、视频、感知与三维",
+    "application-domain"
+  ],
+  "deep-learning": [
+    "深度学习：原理、组件与训练工程",
+    "engineering-and-learning"
+  ],
+  "reinforcement-learning": [
+    "强化学习：算法、环境与交互数据",
+    "learning-paradigm-and-support"
+  ]
+}
