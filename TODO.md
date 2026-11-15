@@ -8,7 +8,8 @@
 - [x] Record redirects,2 archives,5 license-classifier exceptions and MAE noncommercial limits.
 - [x] Add22 offline contracts;32 catalog tests and3 existing experiment tests PASS.
 - [x] Add report, source/search protocol, task-specific experiment guidance and broader read-only CI.
-- [ ] Publish scoped public files and verify remote Git blobs/CI.
+- [x] Publish `aa5a548` to main/task branch;34 remote blobs and3 key-file byte hashes
+  match. Hosted CI43674295561 PASS with32 catalog +3 original experiment tests.
 - [ ] P1: Select one fixed-fixture study with equal budgets, an independent baseline and negative controls.
 - [ ] P2: Add other ML branches only with specific tasks, primary sources, rights and measurable value.
 

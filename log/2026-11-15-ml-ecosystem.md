@@ -48,5 +48,12 @@ prior10 cards, historical source/PR records, original experiment, models and tes
 No upstream ML training/inference, weights, paid compute, private source export or external
 posts. New quality, runtime, cost, adoption and learning benefit NOT_RUN / UNMEASURED.
 
-Next: finish local validation, publish scoped public files, verify remote blobs and CI;
-then select one pre-registered synthetic study rather than treating curation as execution.
+## Publication
+
+Content commit `aa5a548d704d69b58c465f56dc28dde281286d74` published to main/task branch.
+At `2026-11-15T11:54:08+08:00`,34/34 remote Git blobs matched; catalog index, snapshot
+and report also matched downloaded SHA256 bytes. Both refs confirmed via the public API.
+Hosted CI43674295561 SUCCESS; actual logs show32 +3 tests PASS. Initial transport
+timeouts/EOF were retried, not treated as verification or absence.
+
+Next: select one pre-registered synthetic study rather than treating curation as execution.

@@ -16,4 +16,21 @@
 - Upstream installation/execution/training, quality/cost gains and production acceptance
   NOT_RUN / UNMEASURED. No paid service, GPU, model download, external post or deployment.
 
-Publication and remote evidence will be recorded after the actual push/read-back.
+## Publication and read-back
+
+**Remote content checked:** `2026-11-15T11:54:08+08:00` (Asia/Shanghai).
+
+- Content commit: `aa5a548d704d69b58c465f56dc28dde281286d74`, pushed normally to main
+  and `codex/ml-ecosystem-catalog-20261115`; both refs subsequently confirmed by API.
+-34/34 changed Git blobs match. Catalog index, source snapshot and report were read
+  back through GitHub's contents API with byte-for-byte SHA256 matches.
+- Snapshot SHA256: `550e6a435ffb1718977939d618cd91c24a4d4daa085c43930443811ff647cb62`.
+- [Hosted CI43674295561](https://github.com/pengpengyi92/P-ML/actions/runs/43674295561)
+  completed SUCCESS. Its logs explicitly show32 catalog and3 original experiment tests
+  passing; this is not an upstream ML model benchmark.
+- Initial read-back and git reference requests had transient timeout/EOF transport failures.
+  Retried bounded source reads successfully; references confirmed using the GitHub API.
+  No failed request was used as verification or as evidence of missing content.
+- This follow-up changes delivery records only. Source observations, collector/tests,
+  historical cards and experiment remain unchanged. Documentation-only receipt paths
+  do not match the existing catalog workflow filter; the linked CI covers the content commit.
