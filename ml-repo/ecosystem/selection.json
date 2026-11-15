@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "title": "P-ML machine learning ecosystem map",
+  "complete_ecosystem_inventory": false,
+  "timezone": "Asia/Shanghai",
+  "selection": "Maintainer-selected primary repositories across learning paradigms, application domains and engineering layers; not an exhaustive global ML inventory.",
+  "entries": [
+    {
+      "repository": "numpy/numpy",
+      "categories": [
+        "foundations"
+      ],
+      "use": "数组、shape、dtype 和向量化",
+      "boundary": "广播、精度和拷贝语义会改变数值或内存行为。",
+      "source_review_note": "固定 root LICENSE 为 BSD 三条款式文本；API NOASSERTION 不是无许可。构建/分发组件仍需独立核查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "scipy/scipy",
+      "categories": [
+        "foundations",
+        "probabilistic"
+      ],
+      "use": "科学计算、优化、统计与稀疏矩阵",
+      "boundary": "算法收敛和约束可行性须独立检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pandas-dev/pandas",
+      "categories": [
+        "foundations"
+      ],
+      "use": "表格、时间索引与实验数据整理",
+      "boundary": "join、缺失值和时间对齐可能产生泄漏。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pola-rs/polars",
+      "categories": [
+        "foundations"
+      ],
+      "use": "列式数据和惰性查询",
+      "boundary": "不能将查询速度自动解释为模型质量提升。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "dask/dask",
+      "categories": [
+        "foundations"
+      ],
+      "use": "分块、惰性和分布式数据处理",
+      "boundary": "调度开销、分区与集群资源须另测。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pytorch/pytorch",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "张量、自动微分、模型与训练状态",
+      "boundary": "硬件、算子、随机性和构建条件独立验证。",
+      "source_review_note": "固定 LICENSE 含 BSD 风格条款及多来源版权声明；不能以 API NOASSERTION 断言无许可，也不能忽略第三方组件。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "tensorflow/tensorflow",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "计算图、自动微分和训练接口",
+      "boundary": "与其他框架对照时固定数据、精度和训练预算。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "jax-ml/jax",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "函数变换、自动微分与编译",
+      "boundary": "JIT 首次编译成本与热运行耗时分开测量。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "keras-team/keras",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "高层建模和多后端接口",
+      "boundary": "后端、版本与数值等价性不能默认一致。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "google/flax",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "JAX 模型、参数与训练状态组织",
+      "boundary": "不同 Flax API 和状态管理方式不能混为一谈。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "Lightning-AI/pytorch-lightning",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "训练循环、checkpoint 与分布式组织",
+      "boundary": "便利封装不能消除数据和评估错误。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "fastai/fastai",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "高层训练、数据块和迁移学习",
+      "boundary": "默认 augmentation、学习率和拆分需要读清楚。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "scikit-learn/scikit-learn",
+      "categories": [
+        "supervised",
+        "unsupervised",
+        "evaluation"
+      ],
+      "use": "Pipeline、传统模型、聚类、降维与交叉验证",
+      "boundary": "预处理只能在训练集或训练折拟合。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "dmlc/xgboost",
+      "categories": [
+        "supervised"
+      ],
+      "use": "梯度提升树的目标、正则和早停",
+      "boundary": "不能用最终测试集选轮次或超参。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "microsoft/LightGBM",
+      "categories": [
+        "supervised"
+      ],
+      "use": "梯度提升树、分箱和叶子复杂度",
+      "boundary": "类别编码、早停和过拟合控制需要同口径。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "catboost/catboost",
+      "categories": [
+        "supervised"
+      ],
+      "use": "类别特征和梯度提升",
+      "boundary": "时序与目标编码仍要遵守数据可用时间。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "scikit-learn-contrib/imbalanced-learn",
+      "categories": [
+        "supervised",
+        "evaluation"
+      ],
+      "use": "不平衡分类和重采样流水线",
+      "boundary": "重采样必须在训练折内部，不能先全量采样再切分。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "statsmodels/statsmodels",
+      "categories": [
+        "supervised",
+        "probabilistic",
+        "time-series"
+      ],
+      "use": "统计模型、诊断与参数解释",
+      "boundary": "显著性、预测力和因果关系不是同一结论。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "autogluon/autogluon",
+      "categories": [
+        "supervised"
+      ],
+      "use": "AutoML、集成与受预算约束的模型搜索",
+      "boundary": "搜索时间、资源、验证复用和测试隔离必须记录。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "online-ml/river",
+      "categories": [
+        "supervised",
+        "time-series"
+      ],
+      "use": "在线学习与流式评估",
+      "boundary": "必须先预测后更新，不能把未来标签提前学习。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "lmcinnes/umap",
+      "categories": [
+        "unsupervised"
+      ],
+      "use": "邻域保持与非线性降维",
+      "boundary": "二维图好看不等于簇真实或预测有效。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "scikit-learn-contrib/hdbscan",
+      "categories": [
+        "unsupervised"
+      ],
+      "use": "密度聚类、噪声和稳定性",
+      "boundary": "标签编号无语义，比较时处理噪声与标签置换。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/faiss",
+      "categories": [
+        "unsupervised"
+      ],
+      "use": "稠密向量相似检索、索引和聚类组件",
+      "boundary": "并非通用无监督框架或完整 RAG；召回、聚类质量和资源开销须分别评估。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "MaartenGr/BERTopic",
+      "categories": [
+        "unsupervised",
+        "transformers-llm"
+      ],
+      "use": "embedding、聚类和主题表示",
+      "boundary": "主题解释、离群项及外部 embedding 权重要单独验证。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "vturrisi/solo-learn",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "视觉自监督方法与线性探针评估",
+      "boundary": "预训练、线性探针和微调须使用独立协议。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "lightly-ai/lightly",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "自监督训练组件与示例",
+      "boundary": "开源包、托管产品和模型权重的权利分开检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/dinov2",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "自监督视觉特征与下游评估",
+      "boundary": "权重、数据集和仓库代码许可不能互相替代。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/mae",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "掩码图像建模与重建",
+      "boundary": "注意非商业或其他限制及权重/数据的单独条款。",
+      "source_review_note": "固定 LICENSE 为 CC BY-NC 4.0（Attribution-NonCommercial）；仅作受限研究参考，不列为无条件可商用开源。",
+      "reuse_policy": "restricted-noncommercial-reference"
+    },
+    {
+      "repository": "microsoft/Semi-supervised-learning",
+      "categories": [
+        "self-semi-supervised"
+      ],
+      "use": "有标签/无标签分割与半监督协议",
+      "boundary": "无标签训练池不能混入最终测试信息。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "模型接口、tokenization、训练与推理",
+      "boundary": "库的 Apache 许可不代表所有 Hub 权重和训练数据同许可。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/tokenizers",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "分词训练、归一化和编码",
+      "boundary": "测试语料污染、特殊 token 和截断必须审计。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/datasets",
+      "categories": [
+        "transformers-llm",
+        "foundations"
+      ],
+      "use": "数据版本、split 和预处理",
+      "boundary": "客户端许可不等于数据集许可或个人数据使用授权。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/evaluate",
+      "categories": [
+        "transformers-llm",
+        "evaluation"
+      ],
+      "use": "指标定义和评估接口",
+      "boundary": "具体指标实现、依赖和数据条款独立核查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/peft",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "LoRA、adapter 与参数高效微调",
+      "boundary": "可训练参数更少不等于质量必然更高。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/trl",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "后训练、偏好学习和训练实验",
+      "boundary": "偏好数据、基础模型、reward hacking 与留出评估需明确。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/sentence-transformers",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "文本 embedding 与语义检索",
+      "boundary": "检索效果取决于语料、负样本和固定评估集。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/safetensors",
+      "categories": [
+        "transformers-llm",
+        "deployment"
+      ],
+      "use": "权重序列化、dtype 和加载",
+      "boundary": "安全格式不保证来源可信、无后门或供应链安全。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pytorch/vision",
+      "categories": [
+        "vision"
+      ],
+      "use": "视觉数据、变换和模型",
+      "boundary": "避免按图片随机拆分同一主体或近重复样本。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/pytorch-image-models",
+      "categories": [
+        "vision"
+      ],
+      "use": "视觉模型、预训练和训练配置",
+      "boundary": "各权重的许可、训练数据和预处理单独检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "open-mmlab/mmdetection",
+      "categories": [
+        "vision"
+      ],
+      "use": "目标检测的配置、数据和评估",
+      "boundary": "IoU、mAP、类别定义和评估协议必须固定。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "open-mmlab/mmsegmentation",
+      "categories": [
+        "vision"
+      ],
+      "use": "语义分割、训练与 mIoU",
+      "boundary": "忽略标签、类别映射和图像级拆分影响结果。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "facebookresearch/detectron2",
+      "categories": [
+        "vision"
+      ],
+      "use": "检测与分割的研究实现",
+      "boundary": "CUDA、编译器、权重和依赖兼容性另测。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "kornia/kornia",
+      "categories": [
+        "vision"
+      ],
+      "use": "可微视觉运算和 augmentation",
+      "boundary": "增强应遵循训练/验证边界，不能任意改标签语义。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pytorch/audio",
+      "categories": [
+        "audio"
+      ],
+      "use": "音频 I/O、变换与模型",
+      "boundary": "检查维护阶段、后端迁移和版本支持，不默认功能持续扩展。",
+      "source_review_note": "固定 README 明确处于 maintenance phase，部分功能已从2.8弃用并在2.9移除；不是当前特性持续扩展承诺。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "speechbrain/speechbrain",
+      "categories": [
+        "audio"
+      ],
+      "use": "语音训练、识别和相关研究配方",
+      "boundary": "按说话人/会话隔离并核对语料及权重条款。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "openai/whisper",
+      "categories": [
+        "audio"
+      ],
+      "use": "语音识别与转录",
+      "boundary": "语言、噪声、时间戳与幻觉错误须按固定样本评估。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "huggingface/diffusers",
+      "categories": [
+        "generative"
+      ],
+      "use": "扩散模型、scheduler 与生成管线",
+      "boundary": "库、权重、训练数据和生成内容的使用条件分开检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "CompVis/latent-diffusion",
+      "categories": [
+        "generative"
+      ],
+      "use": "潜空间扩散的研究实现",
+      "boundary": "研究实现不代表生产支持；模型和数据权利独立。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "lucidrains/denoising-diffusion-pytorch",
+      "categories": [
+        "generative"
+      ],
+      "use": "扩散去噪流程的学习实现",
+      "boundary": "个人实现不等同原论文作者实现或已复现论文结果。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "Farama-Foundation/Gymnasium",
+      "categories": [
+        "reinforcement"
+      ],
+      "use": "环境 API、状态和 episode 边界",
+      "boundary": "环境本身不是 RL 算法，terminated 与 truncated 要区分。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "DLR-RM/stable-baselines3",
+      "categories": [
+        "reinforcement"
+      ],
+      "use": "常用强化学习算法与训练",
+      "boundary": "独立环境种子、评估 episode 和 reward 口径必须固定。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "ray-project/ray",
+      "categories": [
+        "reinforcement",
+        "deployment"
+      ],
+      "use": "分布式任务、调参与 RL 工具链",
+      "boundary": "Ray 核心、RLlib 和托管服务不同；集群成本另测。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "vwxyzjn/cleanrl",
+      "categories": [
+        "reinforcement"
+      ],
+      "use": "单文件强化学习实现",
+      "boundary": "简洁实现不等于跨环境可直接复用结果。",
+      "source_review_note": "固定 LICENSE 主体为 MIT，另列改编代码的 Apache 及其他通知；按文件检查，不把 NOASSERTION 当作无许可。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pyro-ppl/pyro",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "概率程序、变分推断和后验检查",
+      "boundary": "推断收敛与后验预测检查不能省略。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pyro-ppl/numpyro",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "JAX 概率推断",
+      "boundary": "设备精度、采样诊断和链间收敛须记录。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pymc-devs/pymc",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "贝叶斯模型与采样诊断",
+      "boundary": "先验敏感性和 posterior predictive 不是点预测精度。",
+      "source_review_note": "固定 LICENSE 声明 Apache-2.0，含 AePPL 的 MIT 代码及历史声明；按组件检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "cornellius-gp/gpytorch",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "高斯过程与不确定性",
+      "boundary": "训练规模、近似和区间校准独立验证。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "sktime/sktime",
+      "categories": [
+        "time-series"
+      ],
+      "use": "时间序列预测、变换和评估",
+      "boundary": "使用时间顺序/滚动切分，不套用普通随机 CV。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "sktime/pytorch-forecasting",
+      "categories": [
+        "time-series"
+      ],
+      "use": "深度时序模型和 covariate 数据组织",
+      "boundary": "known-future 与 observed-only 变量必须真实可用。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "unit8co/darts",
+      "categories": [
+        "time-series"
+      ],
+      "use": "多类预测模型和回测接口",
+      "boundary": "标准化、外生变量及预测起点遵守 point-in-time。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pyg-team/pytorch_geometric",
+      "categories": [
+        "graph"
+      ],
+      "use": "图神经网络、采样和数据",
+      "boundary": "transductive 与 inductive 切分不同，边和节点泄漏需防范。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "dmlc/dgl",
+      "categories": [
+        "graph"
+      ],
+      "use": "图模型、采样与计算",
+      "boundary": "依赖/硬件支持和图拆分协议不能假定兼容。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "optuna/optuna",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "超参搜索与预算管理",
+      "boundary": "搜索只见验证折，最终测试不能反复参与选型。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "mlflow/mlflow",
+      "categories": [
+        "evaluation",
+        "deployment"
+      ],
+      "use": "实验跟踪、模型记录与版本",
+      "boundary": "跟踪工具不保证实验公平或数据可追溯。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "shap/shap",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "模型解释与特征归因",
+      "boundary": "归因不是因果效应，对背景集和相关性敏感。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "pytorch/captum",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "PyTorch 模型解释",
+      "boundary": "解释结果需要 sanity checks，不能当正确性证明。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "evidentlyai/evidently",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "数据/模型评估和漂移检查",
+      "boundary": "漂移不自动等于性能下降，更不应自动交易或重训。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "fairlearn/fairlearn",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "分群指标和公平性评估",
+      "boundary": "公平性依情境和约束而定，不能用一个总分替代。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "onnx/onnx",
+      "categories": [
+        "deployment"
+      ],
+      "use": "模型交换格式和算子协议",
+      "boundary": "导出成功不代表算子支持或数值等价。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "microsoft/onnxruntime",
+      "categories": [
+        "deployment"
+      ],
+      "use": "ONNX 执行与优化",
+      "boundary": "分别验证 provider、精度、误差、冷启动与热延迟。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "bentoml/BentoML",
+      "categories": [
+        "deployment"
+      ],
+      "use": "模型服务和部署组织",
+      "boundary": "本地示例不等于生产认证、隔离或吞吐保证。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "vllm-project/vllm",
+      "categories": [
+        "deployment",
+        "transformers-llm"
+      ],
+      "use": "LLM 推理与服务",
+      "boundary": "模型支持、硬件、并发和 token 延迟需要实际测量。",
+      "reuse_policy": "review-code-data-weights-components"
+    },
+    {
+      "repository": "triton-inference-server/server",
+      "categories": [
+        "deployment"
+      ],
+      "use": "多后端推理服务",
+      "boundary": "服务软件、后端、容器和 GPU 驱动许可分别检查。",
+      "reuse_policy": "review-code-data-weights-components"
+    }
+  ]
+}

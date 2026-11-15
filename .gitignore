@@ -1,4 +1,5 @@
 # Compiled
+.local/
 __pycache__/
 *.pyc
 *.elc

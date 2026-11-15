@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "title": "P-ML ecosystem verification receipt",
+  "timezone": "Asia/Shanghai",
+  "status": "LOCAL_VALIDATION_PASS",
+  "recorded_at": "2026-11-15T11:52:10+08:00",
+  "baseline_commit": "4d5d6d61a61e03b6e9ce7c2bef472ffc21025a0a",
+  "scope": "Public primary sources, source integrity and offline catalog contracts only",
+  "source_snapshot": {
+    "path": "ml-repo/ecosystem/snapshot.json",
+    "completed_at": "2026-11-15T11:46:35+08:00",
+    "sha256": "550e6a435ffb1718977939d618cd91c24a4d4daa085c43930443811ff647cb62",
+    "original_api_timestamps_retained_on_resume": true,
+    "unique_primary_repositories": 73,
+    "readme_license_files_verified_by_git_blob_and_byte_size": 146,
+    "prior_detailed_cards_preserved_and_included": 10,
+    "new_unique_vs_prior_cards": 63,
+    "archived": 2,
+    "api_license_classifier_exceptions": 5,
+    "explicit_noncommercial_reference": 1,
+    "multi_label_category_counts_not_additive": {
+      "foundations": 6, "frameworks": 7, "supervised": 8, "unsupervised": 5,
+      "self-semi-supervised": 5, "transformers-llm": 10, "vision": 10, "audio": 3,
+      "generative": 3, "reinforcement": 4, "probabilistic": 6, "time-series": 5,
+      "graph": 2, "evaluation": 9, "deployment": 8
+    }
+  },
+  "environment": {"os": "Windows", "python": "3.11.3", "dependencies_installed_for_this_task": []},
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0, "passed": 32, "new": 22, "retained": 10,
+      "completed_at": "2026-11-15T11:52:10+08:00",
+      "raw_local_transcript_sha256": "43a07177ecaff258789259fce9059a309d7a7d9c534ea2f5c219681dab64a6d9"
+    },
+    {
+      "command": "python -m unittest discover -s ml-project/linear-regression-feature-scaling -v",
+      "exit_code": 0, "passed": 3,
+      "completed_at": "2026-11-15T11:49:43+08:00",
+      "raw_local_transcript_sha256": "f66e78db1f590388ef9e1023980d51c278a248a2b569f5cf25b965ba7ccc94e7"
+    },
+    {"command": "python scripts/collect_ml_ecosystem.py --render", "exit_code": 0, "result": "All route Markdown hashes unchanged: deterministic rendering PASS"},
+    {"command": "git diff --exit-code -- ml-repo/catalog.json ml-repo/VALIDATION.json ml-repo/classical-ml ml-repo/deep-learning ml-repo/llm-tooling ml-repo/data-and-evaluation ml-project models tests/test_repo_catalog.py update/2026-11-14-p-ml-research-statement.md", "exit_code": 0, "result": "Historical cards/source records, legacy models, old tests and original experiment unchanged"}
+  ],
+  "code_sha256": {
+    "scripts/collect_ml_ecosystem.py": "053794bbe43f85944e770f713370c3e327e776e33798b26fb37f1d834142d912",
+    "tests/test_ml_ecosystem.py": "28d6ec45f1a92bde180ac7cedc99de5aa5f0ed1ccef0580bdf08efebff6d9595",
+    "ml-repo/ecosystem/selection.json": "35871c23850dfe5c72412aa03d182e2c67dd8f8d403dac7fc19d03129b3538e3"
+  },
+  "corrections": [
+    "Preliminary read used incorrect workflow filename; actual workflow discovered before editing",
+    "PowerShell preview pipeline parse error corrected without inferring missing sources",
+    "Rejected same-path delete/add patch reapplied as in-place structured update; no partial deletion",
+    "Self-review corrected Faiss clustering support; MAE noncommercial and mixed-license notes explicit",
+    "Whitespace-only EOF warning in update index corrected before publication",
+    "Staged validation detected Windows CRLF generated files; normalized public output to LF and fixed generator newlines before retesting and hashing"
+  ],
+  "raw_artifact_policy": "Full source/cache and test transcripts remain ignored locally; hashes are provenance receipts, not public download links",
+  "hosted_ci_at_local_receipt": "NOT_OBSERVED",
+  "upstream_runtime": "NOT_RUN",
+  "quality_and_cost_gain": "UNMEASURED",
+  "production_security": "NOT_ASSESSED",
+  "runtime_model_calls_for_catalog_and_offline_tests": 0,
+  "development_model_token_cost": "UNMEASURED"
+}

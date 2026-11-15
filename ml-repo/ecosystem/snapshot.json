@@ -1,0 +1,3102 @@
+{
+  "schema_version": 1,
+  "title": "P-ML machine learning ecosystem map",
+  "started_at": "2026-11-15T11:46:35+08:00",
+  "timezone": "Asia/Shanghai",
+  "complete_ecosystem_inventory": false,
+  "source_policy": "Public primary metadata and byte-verified pinned README/license only; no upstream code/data mirror or execution",
+  "resume": true,
+  "entries": [
+    {
+      "repository": "numpy/numpy",
+      "categories": [
+        "foundations"
+      ],
+      "use": "数组、shape、dtype 和向量化",
+      "boundary": "广播、精度和拷贝语义会改变数值或内存行为。",
+      "source_review_note": "固定 root LICENSE 为 BSD 三条款式文本；API NOASSERTION 不是无许可。构建/分发组件仍需独立核查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "numpy/numpy",
+      "url": "https://github.com/numpy/numpy",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "The fundamental package for scientific computing with Python.",
+      "default_branch": "main",
+      "head": "ebad7c7ca008d222d7fcf2ce18a0d3c253d1a107",
+      "pushed_at": "2026-11-15T03:17:43Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "NOASSERTION",
+      "license_class": "needs-license-review",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "ccf71a21a3abc4a0f1cd9d0a37cd50bc38a5f9f6",
+          "sha256": "b2aef38c7633af8cc43be494004da614e719cb20041beecaaa44566fe663a6ec",
+          "bytes": 4411,
+          "url": "https://github.com/numpy/numpy/blob/ebad7c7ca008d222d7fcf2ce18a0d3c253d1a107/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "25784aa10df37635b7f6a1f87781b767dabcff4d",
+          "sha256": "a71740d1db015fd7e9d03304554231e47d5bd4712d7e9d43c14164219828db20",
+          "bytes": 1543,
+          "url": "https://github.com/numpy/numpy/blob/ebad7c7ca008d222d7fcf2ce18a0d3c253d1a107/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "scipy/scipy",
+      "categories": [
+        "foundations",
+        "probabilistic"
+      ],
+      "use": "科学计算、优化、统计与稀疏矩阵",
+      "boundary": "算法收敛和约束可行性须独立检查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "scipy/scipy",
+      "url": "https://github.com/scipy/scipy",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "SciPy library main repository",
+      "default_branch": "main",
+      "head": "a1ea3167fe271a2950bdc8878a403b2eda592fcb",
+      "pushed_at": "2026-11-14T14:17:54Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "dc9b6d920fd421aaaf89d6b2a4928fb79017cbb6",
+          "sha256": "6a4d55e53007e0d509dc30f5a8d460c280f0f5bcf2567c910948e7eb23047b10",
+          "bytes": 3913,
+          "url": "https://github.com/scipy/scipy/blob/a1ea3167fe271a2950bdc8878a403b2eda592fcb/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "1032aece8a8109d67f238de6865d8b08e750a8c0",
+          "sha256": "221e59f5e910fd7f94e44f0dac77436a11338c285c6346232e4a850a50da0e94",
+          "bytes": 1531,
+          "url": "https://github.com/scipy/scipy/blob/a1ea3167fe271a2950bdc8878a403b2eda592fcb/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pandas-dev/pandas",
+      "categories": [
+        "foundations"
+      ],
+      "use": "表格、时间索引与实验数据整理",
+      "boundary": "join、缺失值和时间对齐可能产生泄漏。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pandas-dev/pandas",
+      "url": "https://github.com/pandas-dev/pandas",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more",
+      "default_branch": "main",
+      "head": "9b9be6d5b979cb984b765026158587c478a9a6f4",
+      "pushed_at": "2026-11-15T03:18:02Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "9c759350971e68ffd2d8b26e1b49b832a475ddf0",
+          "sha256": "87bb217c0f52b7fb982ff01671d16a354f304c363183a8d0d874885f56ed5738",
+          "bytes": 9911,
+          "url": "https://github.com/pandas-dev/pandas/blob/9b9be6d5b979cb984b765026158587c478a9a6f4/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "bd1cc2a30c626d0bbe43ab6ec1c4744c2e2df831",
+          "sha256": "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae",
+          "bytes": 1634,
+          "url": "https://github.com/pandas-dev/pandas/blob/9b9be6d5b979cb984b765026158587c478a9a6f4/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pola-rs/polars",
+      "categories": [
+        "foundations"
+      ],
+      "use": "列式数据和惰性查询",
+      "boundary": "不能将查询速度自动解释为模型质量提升。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pola-rs/polars",
+      "url": "https://github.com/pola-rs/polars",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Extremely fast Query Engine for DataFrames, written in Rust",
+      "default_branch": "main",
+      "head": "2d9938dfa3558a89c5d7a05d4ff1b0e5afccfd59",
+      "pushed_at": "2026-11-15T01:34:04Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "b868bcab455d882692515ea01d67726a73e84568",
+          "sha256": "8bab4356a6dbd707e456dae150901f26c376bd38ce5094c8237b881173ac5007",
+          "bytes": 7095,
+          "url": "https://github.com/pola-rs/polars/blob/2d9938dfa3558a89c5d7a05d4ff1b0e5afccfd59/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "33b09bbb6c5bd43c5e985e2affed64c5ed093616",
+          "sha256": "8296022372dc83cc8ef234b3d4889ef8f8b1779754a78bebf13d2c5178a6b4c4",
+          "bytes": 1145,
+          "url": "https://github.com/pola-rs/polars/blob/2d9938dfa3558a89c5d7a05d4ff1b0e5afccfd59/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "dask/dask",
+      "categories": [
+        "foundations"
+      ],
+      "use": "分块、惰性和分布式数据处理",
+      "boundary": "调度开销、分区与集群资源须另测。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "dask/dask",
+      "url": "https://github.com/dask/dask",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Parallel computing with task scheduling",
+      "default_branch": "main",
+      "head": "249a51a1db4261791b93b4ce04e67341729939c3",
+      "pushed_at": "2026-11-13T16:55:52Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "fae92f595e199cde2db65dd59639c46a803d65d2",
+          "sha256": "3f78e7b7da7417a2f880927f157951f187fb88154baedfaa1cde52ecded10f44",
+          "bytes": 1291,
+          "url": "https://github.com/dask/dask/blob/249a51a1db4261791b93b4ce04e67341729939c3/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "0aa7cf43e4159ad54891d7b3bce18ba0de7d168f",
+          "sha256": "121b79f2afb8b6a68f30067f98a035ab083780bd343205a072d76924383b63cf",
+          "bytes": 1531,
+          "url": "https://github.com/dask/dask/blob/249a51a1db4261791b93b4ce04e67341729939c3/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pytorch/pytorch",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "张量、自动微分、模型与训练状态",
+      "boundary": "硬件、算子、随机性和构建条件独立验证。",
+      "source_review_note": "固定 LICENSE 含 BSD 风格条款及多来源版权声明；不能以 API NOASSERTION 断言无许可，也不能忽略第三方组件。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "default_branch": "main",
+      "head": "c79633996ebc2114482ae5a4ff3cb409d79a8a9c",
+      "pushed_at": "2026-11-15T03:31:39Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "NOASSERTION",
+      "license_class": "needs-license-review",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "ba8042230e7e1ee0c64ada29878aac14773b328c",
+          "sha256": "3ad49faff26017c7f237596385e355b4aa1c3e3b23c4c2ebad01f92def1f35b1",
+          "bytes": 23685,
+          "url": "https://github.com/pytorch/pytorch/blob/c79633996ebc2114482ae5a4ff3cb409d79a8a9c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "c23172f7aff0254e4f0f163fb2e6e355cbaec5f4",
+          "sha256": "bd018feef8825e88181c84eb7e3aa4eafb8f08a20d9fd6ef948569610c4a3e43",
+          "bytes": 3464,
+          "url": "https://github.com/pytorch/pytorch/blob/c79633996ebc2114482ae5a4ff3cb409d79a8a9c/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "tensorflow/tensorflow",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "计算图、自动微分和训练接口",
+      "boundary": "与其他框架对照时固定数据、精度和训练预算。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "default_branch": "master",
+      "head": "9417b73895fc2c9224bdad8f556db4d178bce700",
+      "pushed_at": "2026-11-15T02:07:33Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "2ada91b134b2bc6daa60ca6265f1290f38a748c1",
+          "sha256": "e2f779cef212fbc54c3f9b1e273583720edac1ac9cc6ce6813b1e0386a968f0d",
+          "bytes": 7738,
+          "url": "https://github.com/tensorflow/tensorflow/blob/9417b73895fc2c9224bdad8f556db4d178bce700/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "12d255f8e0f049d3c3127e71788e219b86cdf55b",
+          "sha256": "71c6915d04265772a0339bed47276942c678b45cc01534210ebe6984fd1aec65",
+          "bytes": 13575,
+          "url": "https://github.com/tensorflow/tensorflow/blob/9417b73895fc2c9224bdad8f556db4d178bce700/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "jax-ml/jax",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "函数变换、自动微分与编译",
+      "boundary": "JIT 首次编译成本与热运行耗时分开测量。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "jax-ml/jax",
+      "url": "https://github.com/jax-ml/jax",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more",
+      "default_branch": "main",
+      "head": "a4ed83c9cb70611b48c81cff3994ff9ce165c03c",
+      "pushed_at": "2026-11-15T02:50:32Z",
+      "metadata_observed_at": "2026-11-15T11:43:33+08:00",
+      "sources_observed_at": "2026-11-15T11:43:36+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "6c1da50d9a243065cf6a24245ecc4d757379262c",
+          "sha256": "77e1359b4dee2af8dbb98a545434c28ba03daa9c08eadcc3e9c02035c0b62083",
+          "bytes": 10754,
+          "url": "https://github.com/jax-ml/jax/blob/a4ed83c9cb70611b48c81cff3994ff9ce165c03c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "url": "https://github.com/jax-ml/jax/blob/a4ed83c9cb70611b48c81cff3994ff9ce165c03c/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "keras-team/keras",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "高层建模和多后端接口",
+      "boundary": "后端、版本与数值等价性不能默认一致。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "keras-team/keras",
+      "url": "https://github.com/keras-team/keras",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Deep Learning for humans",
+      "default_branch": "master",
+      "head": "50be564d7d833537b789b0359ec709f5a7267c33",
+      "pushed_at": "2026-11-14T20:23:07Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "da60850f49d6bac37ecf108b10c827894e95f49f",
+          "sha256": "b2b5691ec6d6b6322b40cf8fe045a1b1f19ba4e6418864c29d08040d1b3ee916",
+          "bytes": 5548,
+          "url": "https://github.com/keras-team/keras/blob/50be564d7d833537b789b0359ec709f5a7267c33/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "f49a4e16e68b128803cc2dcea614603632b04eac",
+          "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+          "bytes": 11356,
+          "url": "https://github.com/keras-team/keras/blob/50be564d7d833537b789b0359ec709f5a7267c33/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "google/flax",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "JAX 模型、参数与训练状态组织",
+      "boundary": "不同 Flax API 和状态管理方式不能混为一谈。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "google/flax",
+      "url": "https://github.com/google/flax",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Flax is a neural network library for JAX that is designed for flexibility.",
+      "default_branch": "main",
+      "head": "204a819c2eb76281b47e4e4a967c578f5615705c",
+      "pushed_at": "2026-11-13T17:24:26Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "5f5d13e3d290506bf3491e166ddd637c1834b043",
+          "sha256": "c30780a09755cc15d99b6741d6b2d895978f1829b83c9157036463a12e629e6d",
+          "bytes": 7907,
+          "url": "https://github.com/google/flax/blob/204a819c2eb76281b47e4e4a967c578f5615705c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "bf911cf860e014baf72a4f0dcb0e690be0b5f098",
+          "sha256": "25e8791da26f7e74c4baf19eafd7d137b64a46952ef840ed01c172b680cf4046",
+          "bytes": 11309,
+          "url": "https://github.com/google/flax/blob/204a819c2eb76281b47e4e4a967c578f5615705c/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "Lightning-AI/pytorch-lightning",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "训练循环、checkpoint 与分布式组织",
+      "boundary": "便利封装不能消除数据和评估错误。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "Lightning-AI/pytorch-lightning",
+      "url": "https://github.com/Lightning-AI/pytorch-lightning",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes.",
+      "default_branch": "master",
+      "head": "84df182f50ab34301aabb3c0eb4031815bfb413d",
+      "pushed_at": "2026-10-30T08:08:36Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "9f91e0eae154ae4ca3785b7c221fbf243cb3c92a",
+          "sha256": "f7cd2824fca50d0761973646e06876563d23ae3cc87c9dde4bb53747f127466e",
+          "bytes": 28557,
+          "url": "https://github.com/Lightning-AI/pytorch-lightning/blob/84df182f50ab34301aabb3c0eb4031815bfb413d/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "2e66bec2e791c2dfa1f8d9bd205180fc06ffc053",
+          "sha256": "a41e2fae9915ae56028f8dbd0bf27995f1907613cbcd2d81a61b010ad34e9fe9",
+          "bytes": 11349,
+          "url": "https://github.com/Lightning-AI/pytorch-lightning/blob/84df182f50ab34301aabb3c0eb4031815bfb413d/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "fastai/fastai",
+      "categories": [
+        "frameworks"
+      ],
+      "use": "高层训练、数据块和迁移学习",
+      "boundary": "默认 augmentation、学习率和拆分需要读清楚。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "fastai/fastai",
+      "url": "https://github.com/fastai/fastai",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "The fastai deep learning library",
+      "default_branch": "main",
+      "head": "46231bdc3e88a457c940dd7bde8a03c92fb42901",
+      "pushed_at": "2026-09-21T10:41:46Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "14f071ad6871331527a9601aabed9f4e68c07b6d",
+          "sha256": "3255b562c4e253821564a84ff650b325229e3b7a9df7993ed1a0f458dab52625",
+          "bytes": 6503,
+          "url": "https://github.com/fastai/fastai/blob/46231bdc3e88a457c940dd7bde8a03c92fb42901/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "url": "https://github.com/fastai/fastai/blob/46231bdc3e88a457c940dd7bde8a03c92fb42901/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "scikit-learn/scikit-learn",
+      "categories": [
+        "supervised",
+        "unsupervised",
+        "evaluation"
+      ],
+      "use": "Pipeline、传统模型、聚类、降维与交叉验证",
+      "boundary": "预处理只能在训练集或训练折拟合。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "scikit-learn/scikit-learn",
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "scikit-learn: machine learning in Python",
+      "default_branch": "main",
+      "head": "ee56c8b5d809dc7b970a140ed501269b63c69cf8",
+      "pushed_at": "2026-11-13T12:58:16Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "cf30a4b3289a096a273ca490e1a846cf4c088795",
+          "sha256": "3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221",
+          "bytes": 7676,
+          "url": "https://github.com/scikit-learn/scikit-learn/blob/ee56c8b5d809dc7b970a140ed501269b63c69cf8/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "COPYING",
+          "blob_sha": "3d7ee432c15b685eaa654b6abe8f8e3ea8126a8d",
+          "sha256": "50d6a9d340f19ab355609917993114daf5f47e3161067bcf34955bbd05cd9cb0",
+          "bytes": 1532,
+          "url": "https://github.com/scikit-learn/scikit-learn/blob/ee56c8b5d809dc7b970a140ed501269b63c69cf8/COPYING"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "dmlc/xgboost",
+      "categories": [
+        "supervised"
+      ],
+      "use": "梯度提升树的目标、正则和早停",
+      "boundary": "不能用最终测试集选轮次或超参。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "dmlc/xgboost",
+      "url": "https://github.com/dmlc/xgboost",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  for Python, R, Java, Scala, C and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow",
+      "default_branch": "master",
+      "head": "293cad1a89ab749e3266e190c68118af2db09982",
+      "pushed_at": "2026-11-11T09:32:16Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "7a0de4c5438f57c998ed3373e4b86524f07ff9f8",
+          "sha256": "e59e190ef0d17e289c86a2b8b76c623f86128d724300fecaec2a4c46075e2367",
+          "bytes": 4608,
+          "url": "https://github.com/dmlc/xgboost/blob/293cad1a89ab749e3266e190c68118af2db09982/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "90c0ff9368463913b3dd7cb155578fdc78477adc",
+          "sha256": "b96f9cead5f4ea4c0a217bd9d879427443a353598fb72694f2d8c4428b53a6af",
+          "bytes": 11349,
+          "url": "https://github.com/dmlc/xgboost/blob/293cad1a89ab749e3266e190c68118af2db09982/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "lightgbm-org/LightGBM",
+      "categories": [
+        "supervised"
+      ],
+      "use": "梯度提升树、分箱和叶子复杂度",
+      "boundary": "类别编码、早停和过拟合控制需要同口径。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "microsoft/LightGBM",
+      "url": "https://github.com/lightgbm-org/LightGBM",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.",
+      "default_branch": "main",
+      "head": "53350cd896c6fd76d2cc03354f452f18646830e9",
+      "pushed_at": "2026-11-12T04:47:04Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "dabb272a1791698e3e28d1cd7f960029b6c12846",
+          "sha256": "799982daa89a30b8d0af069cc250c0e448149835105b406ad4c23e3f0aee84e1",
+          "bytes": 12952,
+          "url": "https://github.com/lightgbm-org/LightGBM/blob/53350cd896c6fd76d2cc03354f452f18646830e9/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "54a487f9fd099e729a636c91deb01c717441e08b",
+          "sha256": "ca70f15d841f7e76c8bbd284d25300cd4ae2ef1035e7e5252b13b73449464305",
+          "bytes": 1121,
+          "url": "https://github.com/lightgbm-org/LightGBM/blob/53350cd896c6fd76d2cc03354f452f18646830e9/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "catboost/catboost",
+      "categories": [
+        "supervised"
+      ],
+      "use": "类别特征和梯度提升",
+      "boundary": "时序与目标编码仍要遵守数据可用时间。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "catboost/catboost",
+      "url": "https://github.com/catboost/catboost",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A fast, scalable, high performance Gradient Boosting on Decision Trees library, used for ranking, classification, regression and other machine learning tasks for Python, R, Java, C++. Supports computation on CPU and GPU.",
+      "default_branch": "master",
+      "head": "fbaf80c65d5ecfdb061ca8633d8036905889ac9f",
+      "pushed_at": "2026-11-15T02:18:01Z",
+      "metadata_observed_at": "2026-11-15T11:43:37+08:00",
+      "sources_observed_at": "2026-11-15T11:43:39+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "814e1a415fd8739263cba2741671fe927c49385a",
+          "sha256": "9c874adb3b5ce9e14a0de3f6b646b11b13532b37c84a16450315d017ac47333e",
+          "bytes": 5279,
+          "url": "https://github.com/catboost/catboost/blob/fbaf80c65d5ecfdb061ca8633d8036905889ac9f/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "ed697ea88a6a575c2b71b647fe4e90cfed7ae9fe",
+          "sha256": "a2574dd20dd0af8e0bd25b34b38c1bb11912ff319ee4f41436395df0b1d19309",
+          "bytes": 11370,
+          "url": "https://github.com/catboost/catboost/blob/fbaf80c65d5ecfdb061ca8633d8036905889ac9f/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "scikit-learn-contrib/imbalanced-learn",
+      "categories": [
+        "supervised",
+        "evaluation"
+      ],
+      "use": "不平衡分类和重采样流水线",
+      "boundary": "重采样必须在训练折内部，不能先全量采样再切分。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "scikit-learn-contrib/imbalanced-learn",
+      "url": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": " A Python Package to Tackle the Curse of Imbalanced Datasets in Machine Learning",
+      "default_branch": "master",
+      "head": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+      "pushed_at": "2026-06-29T16:33:16Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "6a75694cee3908b25230abcdf56b698ee58a3ab3",
+          "sha256": "ca382e5b8e3a3cda2139e4273af56910d83d69ad09a08bfdf156297fae717302",
+          "bytes": 6068,
+          "url": "https://github.com/scikit-learn-contrib/imbalanced-learn/blob/8504e95f0160f61d1b617ca66f779646d2ee609e/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "f703318e0f6bdaf9153b48adcac1b01329842119",
+          "sha256": "fbcab88e3daf0f2f9248f5a774e97915b7a1a36da76a78c6a5baaa07095ef644",
+          "bytes": 1125,
+          "url": "https://github.com/scikit-learn-contrib/imbalanced-learn/blob/8504e95f0160f61d1b617ca66f779646d2ee609e/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "statsmodels/statsmodels",
+      "categories": [
+        "supervised",
+        "probabilistic",
+        "time-series"
+      ],
+      "use": "统计模型、诊断与参数解释",
+      "boundary": "显著性、预测力和因果关系不是同一结论。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "statsmodels/statsmodels",
+      "url": "https://github.com/statsmodels/statsmodels",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Statsmodels: statistical modeling and econometrics in Python",
+      "default_branch": "main",
+      "head": "27e747596049cc1a9b06e113af739fdeec59cecc",
+      "pushed_at": "2026-11-11T18:46:08Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "a96c9e9bc81803036c9cbd5f525906e18a9207ae",
+          "sha256": "d430fa04083d240c9f0e75aa90bc73c13cb1a874f4c7b4ce29bddbb6366c4a42",
+          "bytes": 5994,
+          "url": "https://github.com/statsmodels/statsmodels/blob/27e747596049cc1a9b06e113af739fdeec59cecc/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "47cd54eec489af242da0e1a9fe00f1ed15cf2e69",
+          "sha256": "1ca78e1dec9dcebc55f3b96a862317f23e76422c5fc943568d955aad1f6b5fad",
+          "bytes": 1636,
+          "url": "https://github.com/statsmodels/statsmodels/blob/27e747596049cc1a9b06e113af739fdeec59cecc/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "autogluon/autogluon",
+      "categories": [
+        "supervised"
+      ],
+      "use": "AutoML、集成与受预算约束的模型搜索",
+      "boundary": "搜索时间、资源、验证复用和测试隔离必须记录。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "autogluon/autogluon",
+      "url": "https://github.com/autogluon/autogluon",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Fast and Accurate ML in 3 Lines of Code",
+      "default_branch": "master",
+      "head": "3609e2c0fe7e38dd15d139b70cc10166f9f8babf",
+      "pushed_at": "2026-11-11T00:41:08Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "e48d4400b3e140345de94f8ef3ecc05a1f21ff17",
+          "sha256": "1c2e1931df775fde5353c31a53ba51bce2fc94729de6300610e0a303e6a8b3b6",
+          "bytes": 11214,
+          "url": "https://github.com/autogluon/autogluon/blob/3609e2c0fe7e38dd15d139b70cc10166f9f8babf/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "67db8588217f266eb561f75fae738656325deac9",
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+          "bytes": 10142,
+          "url": "https://github.com/autogluon/autogluon/blob/3609e2c0fe7e38dd15d139b70cc10166f9f8babf/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "online-ml/river",
+      "categories": [
+        "supervised",
+        "time-series"
+      ],
+      "use": "在线学习与流式评估",
+      "boundary": "必须先预测后更新，不能把未来标签提前学习。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "online-ml/river",
+      "url": "https://github.com/online-ml/river",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "🌊 Online machine learning in Python",
+      "default_branch": "main",
+      "head": "115df63c9cd57f904dd3a6d586b6cf32d2c1b2c8",
+      "pushed_at": "2026-11-13T22:16:22Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "f453e8b941f7896f989fb8057ed5104cf11b73ff",
+          "sha256": "92c6f56635966b25877a8661dc7652a10e27b980d879118f909e4019cb763c98",
+          "bytes": 8271,
+          "url": "https://github.com/online-ml/river/blob/115df63c9cd57f904dd3a6d586b6cf32d2c1b2c8/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "c3a351f973d0b1b38eadc6ae72917bfc5ce24f8e",
+          "sha256": "e87f2c8f1ba611702af10cba745e6ceb773d32310135ed55aa2722c55dd0d077",
+          "bytes": 1528,
+          "url": "https://github.com/online-ml/river/blob/115df63c9cd57f904dd3a6d586b6cf32d2c1b2c8/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "lmcinnes/umap",
+      "categories": [
+        "unsupervised"
+      ],
+      "use": "邻域保持与非线性降维",
+      "boundary": "二维图好看不等于簇真实或预测有效。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "lmcinnes/umap",
+      "url": "https://github.com/lmcinnes/umap",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Uniform Manifold Approximation and Projection",
+      "default_branch": "master",
+      "head": "5113b770a4ca109b21e51edd5c88bf981a1702e3",
+      "pushed_at": "2026-11-14T20:51:28Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "f1ffba38ed59721cca15e0fdbbfa4a2ea0a69768",
+          "sha256": "dd486d01ee454bed4114206635b7b376c63a6b2d7453702a9331b1556796f7a5",
+          "bytes": 22962,
+          "url": "https://github.com/lmcinnes/umap/blob/5113b770a4ca109b21e51edd5c88bf981a1702e3/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "5e0d0b7ae409c33017451120ef17b44d3da0b1f6",
+          "sha256": "46fc974145ef85e0992ac3173d03ffe6cdf2611292950e323c5a69b9ca35ff1e",
+          "bytes": 1514,
+          "url": "https://github.com/lmcinnes/umap/blob/5113b770a4ca109b21e51edd5c88bf981a1702e3/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "scikit-learn-contrib/hdbscan",
+      "categories": [
+        "unsupervised"
+      ],
+      "use": "密度聚类、噪声和稳定性",
+      "boundary": "标签编号无语义，比较时处理噪声与标签置换。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "scikit-learn-contrib/hdbscan",
+      "url": "https://github.com/scikit-learn-contrib/hdbscan",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A high performance implementation of HDBSCAN clustering.",
+      "default_branch": "master",
+      "head": "a06a8042e9d49f3a5bbfcfe928ba7113d8cf5c76",
+      "pushed_at": "2026-11-13T18:52:01Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "f5a33e519bfd6b89120ec72f80f46cc948480be4",
+          "sha256": "4cd133fd1eaf6b8476e2ded1bceee142f42de135b3628c912c7dddc974d83b1e",
+          "bytes": 14188,
+          "url": "https://github.com/scikit-learn-contrib/hdbscan/blob/a06a8042e9d49f3a5bbfcfe928ba7113d8cf5c76/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "1e6b11eafc2d7bec313d967633603241f8dfb39f",
+          "sha256": "d5be17fef04ce2213c09a3fffec11021065eaff565733c46ef287248b353a081",
+          "bytes": 1484,
+          "url": "https://github.com/scikit-learn-contrib/hdbscan/blob/a06a8042e9d49f3a5bbfcfe928ba7113d8cf5c76/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/faiss",
+      "categories": [
+        "unsupervised"
+      ],
+      "use": "稠密向量相似检索、索引和聚类组件",
+      "boundary": "并非通用无监督框架或完整 RAG；召回、聚类质量和资源开销须分别评估。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "facebookresearch/faiss",
+      "url": "https://github.com/facebookresearch/faiss",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A library for efficient similarity search and clustering of dense vectors.",
+      "default_branch": "main",
+      "head": "ebab8f784c1d177129602269d5ad966c525fbdcb",
+      "pushed_at": "2026-11-14T16:33:00Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "df490b17ae202d92d5b81df7443e90d11f637097",
+          "sha256": "24679e12982711be6b122268569b7865a14feccc8a0dd9688e15b58e95c35a75",
+          "bytes": 6370,
+          "url": "https://github.com/facebookresearch/faiss/blob/ebab8f784c1d177129602269d5ad966c525fbdcb/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "b96dcb0480a0b0be0727976e5202a1e7b23edc3f",
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+          "bytes": 1086,
+          "url": "https://github.com/facebookresearch/faiss/blob/ebab8f784c1d177129602269d5ad966c525fbdcb/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "MaartenGr/BERTopic",
+      "categories": [
+        "unsupervised",
+        "transformers-llm"
+      ],
+      "use": "embedding、聚类和主题表示",
+      "boundary": "主题解释、离群项及外部 embedding 权重要单独验证。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "MaartenGr/BERTopic",
+      "url": "https://github.com/MaartenGr/BERTopic",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Leveraging BERT and c-TF-IDF to create easily interpretable topics. ",
+      "default_branch": "master",
+      "head": "9036123c97aaa9a6cc4bec4a6db1a7caf9209df6",
+      "pushed_at": "2026-11-14T08:56:22Z",
+      "metadata_observed_at": "2026-11-15T11:43:40+08:00",
+      "sources_observed_at": "2026-11-15T11:43:42+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "e2a96b681503093b855a786bc9ef2821c3fa2730",
+          "sha256": "b1e62568b51de3877f0d26239d5dd7480576dba9bece03a1995bb118b5a45f12",
+          "bytes": 19517,
+          "url": "https://github.com/MaartenGr/BERTopic/blob/9036123c97aaa9a6cc4bec4a6db1a7caf9209df6/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "884719a7e208791b33df78190c974a98260e7f56",
+          "sha256": "d4f326a7d8073fecfd26e8d2f7d6027e5bd9eda689d275dda9cd72c7f2ed017c",
+          "bytes": 1081,
+          "url": "https://github.com/MaartenGr/BERTopic/blob/9036123c97aaa9a6cc4bec4a6db1a7caf9209df6/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "vturrisi/solo-learn",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "视觉自监督方法与线性探针评估",
+      "boundary": "预训练、线性探针和微调须使用独立协议。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "vturrisi/solo-learn",
+      "url": "https://github.com/vturrisi/solo-learn",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "solo-learn: a library of self-supervised methods for visual representation learning powered by Pytorch Lightning",
+      "default_branch": "main",
+      "head": "9187ea39c2c3f43c455ab06664d2b019a9802954",
+      "pushed_at": "2026-10-12T18:34:14Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "61fd55126e4d4d3119057ea93d54b21f56fd182c",
+          "sha256": "803afff2ea1f556ebca8d50866e2ae8d88a52d26822c9e8ea3fbdd1956ab94ce",
+          "bytes": 19298,
+          "url": "https://github.com/vturrisi/solo-learn/blob/9187ea39c2c3f43c455ab06664d2b019a9802954/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "e719bb1043a224479cca1b52b4941f7fd4132d05",
+          "sha256": "a49621bf9f8b246aa6590c4cbdaeec62087c86149315eed01ca17d69f1a7bf55",
+          "bytes": 1068,
+          "url": "https://github.com/vturrisi/solo-learn/blob/9187ea39c2c3f43c455ab06664d2b019a9802954/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "lightly-ai/lightly",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "自监督训练组件与示例",
+      "boundary": "开源包、托管产品和模型权重的权利分开检查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "lightly-ai/lightly",
+      "url": "https://github.com/lightly-ai/lightly",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A python library for self-supervised learning and latent world models on images.",
+      "default_branch": "master",
+      "head": "4340fa42392e65eadbe8e5411b63aea9f7fb2596",
+      "pushed_at": "2026-11-10T21:23:00Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "fbcf3af98b313ecf9d35557b61e0205a06d95db6",
+          "sha256": "ea88cc9df413127c3d84fcf566e9ac4d4e47142ee592f0b7ca79a0d32e9d1c43",
+          "bytes": 42720,
+          "url": "https://github.com/lightly-ai/lightly/blob/4340fa42392e65eadbe8e5411b63aea9f7fb2596/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "335ea9d070ad1c319906aeff798584ded23c7387",
+          "sha256": "d9b9bdb8569b419dd891bfd269253fb946c08f6fa1b5ce96250992ffae6a0f4d",
+          "bytes": 1073,
+          "url": "https://github.com/lightly-ai/lightly/blob/4340fa42392e65eadbe8e5411b63aea9f7fb2596/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/dinov2",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "自监督视觉特征与下游评估",
+      "boundary": "权重、数据集和仓库代码许可不能互相替代。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "facebookresearch/dinov2",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "PyTorch code and models for the DINOv2 self-supervised learning method.",
+      "default_branch": "main",
+      "head": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "pushed_at": "2026-11-05T05:17:45Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "906cd08c55b33306da438df3da837c0f9bf94ff0",
+          "sha256": "d1bc2e9686522bbd66ed6123dc81eb36b3a98e8ea9a2ca97778f54a1c641c9e1",
+          "bytes": 32799,
+          "url": "https://github.com/facebookresearch/dinov2/blob/7764ea0f912e53c92e82eb78a2a1631e92725fc8/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "5471dc10377b76db85a2feca7a99a7eef4980ba8",
+          "sha256": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7",
+          "bytes": 11359,
+          "url": "https://github.com/facebookresearch/dinov2/blob/7764ea0f912e53c92e82eb78a2a1631e92725fc8/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/mae",
+      "categories": [
+        "self-semi-supervised",
+        "vision"
+      ],
+      "use": "掩码图像建模与重建",
+      "boundary": "注意非商业或其他限制及权重/数据的单独条款。",
+      "source_review_note": "固定 LICENSE 为 CC BY-NC 4.0（Attribution-NonCommercial）；仅作受限研究参考，不列为无条件可商用开源。",
+      "reuse_policy": "restricted-noncommercial-reference",
+      "requested_repository": "facebookresearch/mae",
+      "url": "https://github.com/facebookresearch/mae",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "description": "PyTorch implementation of MAE https//arxiv.org/abs/2111.06377",
+      "default_branch": "main",
+      "head": "efb2a8062c206524e35e47d04501ed4f544c0ae8",
+      "pushed_at": "2024-07-23T18:15:40Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "NOASSERTION",
+      "license_class": "needs-license-review",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "68e7e22d64a86bcf2ade493840a3b70fb5ac7c73",
+          "sha256": "edda3ecd28d6cb32559e638c56c7d28d59d6e2f9ada2dd084292c8706764bea6",
+          "bytes": 5716,
+          "url": "https://github.com/facebookresearch/mae/blob/efb2a8062c206524e35e47d04501ed4f544c0ae8/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "b7aecd045caf08d6fbab64d839e447c3146347f7",
+          "sha256": "ffe3b1e0b58c1f1250ce48f84d8c37328f9a1ff59bb77b63bc97480cf2778b64",
+          "bytes": 19337,
+          "url": "https://github.com/facebookresearch/mae/blob/efb2a8062c206524e35e47d04501ed4f544c0ae8/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "microsoft/Semi-supervised-learning",
+      "categories": [
+        "self-semi-supervised"
+      ],
+      "use": "有标签/无标签分割与半监督协议",
+      "boundary": "无标签训练池不能混入最终测试信息。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "microsoft/Semi-supervised-learning",
+      "url": "https://github.com/microsoft/Semi-supervised-learning",
+      "private": false,
+      "fork": false,
+      "archived": true,
+      "description": "A Unified Semi-Supervised Learning Codebase (NeurIPS'22)",
+      "default_branch": "main",
+      "head": "1ef4cbebcc0b368158315aeb425053858cf6c845",
+      "pushed_at": "2026-10-04T15:51:35Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "175b3ff1b71c22b3833dabf4e34d8d1fed986985",
+          "sha256": "268bbe33a889e140a80316a1509c93efc7ffe3d159ca683ddcf4f9fa0fb99159",
+          "bytes": 16840,
+          "url": "https://github.com/microsoft/Semi-supervised-learning/blob/1ef4cbebcc0b368158315aeb425053858cf6c845/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "d11c23dc7e9571ddd775e48fc0e4fc0015146a06",
+          "sha256": "3f72aa0ccdc6294e653e3ec1f6a2eb0a759650c0b5d3cf5208c1c30cceb7b888",
+          "bytes": 1068,
+          "url": "https://github.com/microsoft/Semi-supervised-learning/blob/1ef4cbebcc0b368158315aeb425053858cf6c845/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "模型接口、tokenization、训练与推理",
+      "boundary": "库的 Apache 许可不代表所有 Hub 权重和训练数据同许可。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "default_branch": "main",
+      "head": "3a134bc37f7c22c801b618e289b0255425f22647",
+      "pushed_at": "2026-11-15T00:10:22Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "3fb175afdddfae6feb4ef5438326aa9b0a9abd99",
+          "sha256": "b9f1f01787738eab63e57aea1081b560e90b2880e1555395b3a683198dd474c6",
+          "bytes": 17010,
+          "url": "https://github.com/huggingface/transformers/blob/3a134bc37f7c22c801b618e289b0255425f22647/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "68b7d66c97d66c58de883ed0c451af2b3183e6f3",
+          "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049",
+          "bytes": 11418,
+          "url": "https://github.com/huggingface/transformers/blob/3a134bc37f7c22c801b618e289b0255425f22647/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/tokenizers",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "分词训练、归一化和编码",
+      "boundary": "测试语料污染、特殊 token 和截断必须审计。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/tokenizers",
+      "url": "https://github.com/huggingface/tokenizers",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "💥 Fast State-of-the-Art Tokenizers optimized for Research and Production",
+      "default_branch": "main",
+      "head": "39e28180be35af322d0abf08007d937641a5493b",
+      "pushed_at": "2026-11-12T15:57:09Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "c72dde885ae86971075d127af038a3e78ce45060",
+          "sha256": "4b61eca894fe62bde89ce988d3e95cf78de9d00701f47fbf778fc8c6fcf7dd3a",
+          "bytes": 11367,
+          "url": "https://github.com/huggingface/tokenizers/blob/39e28180be35af322d0abf08007d937641a5493b/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "url": "https://github.com/huggingface/tokenizers/blob/39e28180be35af322d0abf08007d937641a5493b/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/datasets",
+      "categories": [
+        "transformers-llm",
+        "foundations"
+      ],
+      "use": "数据版本、split 和预处理",
+      "boundary": "客户端许可不等于数据集许可或个人数据使用授权。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/datasets",
+      "url": "https://github.com/huggingface/datasets",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use and efficient data manipulation tools",
+      "default_branch": "main",
+      "head": "efc82474bc990f5872226dca56457536c9a880e9",
+      "pushed_at": "2026-11-12T07:54:59Z",
+      "metadata_observed_at": "2026-11-15T11:43:43+08:00",
+      "sources_observed_at": "2026-11-15T11:43:45+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "e34b32d3c95f8b07195a601d0c06e82509216872",
+          "sha256": "b44ee0cc106481037c92a7a3e045ee12c288c6f9963329081ff6e6744e39f344",
+          "bytes": 14466,
+          "url": "https://github.com/huggingface/datasets/blob/efc82474bc990f5872226dca56457536c9a880e9/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "url": "https://github.com/huggingface/datasets/blob/efc82474bc990f5872226dca56457536c9a880e9/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/evaluate",
+      "categories": [
+        "transformers-llm",
+        "evaluation"
+      ],
+      "use": "指标定义和评估接口",
+      "boundary": "具体指标实现、依赖和数据条款独立核查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/evaluate",
+      "url": "https://github.com/huggingface/evaluate",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "🤗 Evaluate: A library for easily evaluating machine learning models and datasets.",
+      "default_branch": "main",
+      "head": "a5db2ad54aaeadf15c7aa1f056bc6f7bbeeb7e5f",
+      "pushed_at": "2026-11-09T20:56:21Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "1de1656775bbebe6bf4353dabaf73a64a8d443eb",
+          "sha256": "093d10fe3bc8361a35cbc0173e65a8094aeb369ffa345f29cce4a4a0acdeceb2",
+          "bytes": 4442,
+          "url": "https://github.com/huggingface/evaluate/blob/a5db2ad54aaeadf15c7aa1f056bc6f7bbeeb7e5f/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "url": "https://github.com/huggingface/evaluate/blob/a5db2ad54aaeadf15c7aa1f056bc6f7bbeeb7e5f/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/peft",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "LoRA、adapter 与参数高效微调",
+      "boundary": "可训练参数更少不等于质量必然更高。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/peft",
+      "url": "https://github.com/huggingface/peft",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+      "default_branch": "main",
+      "head": "66a7c305bac9d7f8183b1f158280b77be971a3d4",
+      "pushed_at": "2026-11-13T09:56:58Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "dcc5d569db74dde84f69543e09b8d09eb062c851",
+          "sha256": "bded606f05727a975a03625a7b0b561be8b048ffacafd78874e80242d981f2d2",
+          "bytes": 12250,
+          "url": "https://github.com/huggingface/peft/blob/66a7c305bac9d7f8183b1f158280b77be971a3d4/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "url": "https://github.com/huggingface/peft/blob/66a7c305bac9d7f8183b1f158280b77be971a3d4/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/trl",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "后训练、偏好学习和训练实验",
+      "boundary": "偏好数据、基础模型、reward hacking 与留出评估需明确。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/trl",
+      "url": "https://github.com/huggingface/trl",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Train transformer language models with reinforcement learning.",
+      "default_branch": "main",
+      "head": "8ad18ec1b6493b85cf9fffbd87d376767ceb8611",
+      "pushed_at": "2026-11-14T12:54:10Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "2f039ab48a5d5b5d9e80a759cd8a794adc98bed0",
+          "sha256": "9a788536f5ed9a21646040cc999a00aa79674f716744d1c799d0b20ac65d2301",
+          "bytes": 10018,
+          "url": "https://github.com/huggingface/trl/blob/8ad18ec1b6493b85cf9fffbd87d376767ceb8611/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "f577b7741dfb5c6af119f250971549dd7750acb9",
+          "sha256": "1bf614b1fdc40fbd344aa58d00d17d5fd0d252ea333a05be018a38959c8b2998",
+          "bytes": 11355,
+          "url": "https://github.com/huggingface/trl/blob/8ad18ec1b6493b85cf9fffbd87d376767ceb8611/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/sentence-transformers",
+      "categories": [
+        "transformers-llm"
+      ],
+      "use": "文本 embedding 与语义检索",
+      "boundary": "检索效果取决于语料、负样本和固定评估集。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/sentence-transformers",
+      "url": "https://github.com/huggingface/sentence-transformers",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "State-of-the-Art Embeddings, Retrieval, and Reranking",
+      "default_branch": "main",
+      "head": "688fd663e7b242f41f3f62296d08c69937efeb00",
+      "pushed_at": "2026-11-13T10:51:22Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "999b250ca87547c45fae71a21ffb24e54ffc72c2",
+          "sha256": "77d3457b8233da01a844c64fc8a69e06b71fa0dd69a2e12d4c7b0bce015ee98d",
+          "bytes": 17559,
+          "url": "https://github.com/huggingface/sentence-transformers/blob/688fd663e7b242f41f3f62296d08c69937efeb00/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "8e5d3560eeeb3e6bb8f233d0ff7cee7372cca397",
+          "sha256": "624b030fd62b8b989dd502d5bb6322cbc0dbb524ab9c9708f32efe33d7275735",
+          "bytes": 11338,
+          "url": "https://github.com/huggingface/sentence-transformers/blob/688fd663e7b242f41f3f62296d08c69937efeb00/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "safetensors/safetensors",
+      "categories": [
+        "transformers-llm",
+        "deployment"
+      ],
+      "use": "权重序列化、dtype 和加载",
+      "boundary": "安全格式不保证来源可信、无后门或供应链安全。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/safetensors",
+      "url": "https://github.com/safetensors/safetensors",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Simple, safe way to store and distribute tensors",
+      "default_branch": "main",
+      "head": "9e6f4d6c7af8c63ac791ab1bfdd58d2de02fbaa4",
+      "pushed_at": "2026-11-12T10:35:41Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "ccc910722eae29543526dc231186a699f71b3182",
+          "sha256": "0a932f120de5c2477b286cae5517b6fec5e1d3ed64a19b99ccfc0a8504db7b13",
+          "bytes": 10630,
+          "url": "https://github.com/safetensors/safetensors/blob/9e6f4d6c7af8c63ac791ab1bfdd58d2de02fbaa4/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "url": "https://github.com/safetensors/safetensors/blob/9e6f4d6c7af8c63ac791ab1bfdd58d2de02fbaa4/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pytorch/vision",
+      "categories": [
+        "vision"
+      ],
+      "use": "视觉数据、变换和模型",
+      "boundary": "避免按图片随机拆分同一主体或近重复样本。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pytorch/vision",
+      "url": "https://github.com/pytorch/vision",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Datasets, Transforms and Models specific to Computer Vision",
+      "default_branch": "main",
+      "head": "4260301135e34180d865426765487113f84e7707",
+      "pushed_at": "2026-11-14T11:35:06Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "624dbfc6bf3c8abeb3ade96c124b0fcc5766b4ca",
+          "sha256": "3bdbc839fe5d915c2cf8a31732b18bd0e649d5d7faaf586d62291553cd51a17a",
+          "bytes": 5109,
+          "url": "https://github.com/pytorch/vision/blob/4260301135e34180d865426765487113f84e7707/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "1edcf92c3317b90fedd187e2eaad101bd1c1efc5",
+          "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+          "bytes": 1517,
+          "url": "https://github.com/pytorch/vision/blob/4260301135e34180d865426765487113f84e7707/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/pytorch-image-models",
+      "categories": [
+        "vision"
+      ],
+      "use": "视觉模型、预训练和训练配置",
+      "boundary": "各权重的许可、训练数据和预处理单独检查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/pytorch-image-models",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (ViT), MobileNetV4, MobileNet-V3 & V2, RegNet, DPN, CSPNet, Swin Transformer, MaxViT, CoAtNet, ConvNeXt, and more",
+      "default_branch": "main",
+      "head": "43b549bfe9d680bc94284cfd0b611152d18e97d7",
+      "pushed_at": "2026-11-14T23:22:59Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "7f23452e80e5a8708550454bf40e7d685154de2f",
+          "sha256": "e3a77e87b728fefc407a33f74b18fb3c21e42ab497e020f7a1597845632b72e9",
+          "bytes": 41442,
+          "url": "https://github.com/huggingface/pytorch-image-models/blob/43b549bfe9d680bc94284cfd0b611152d18e97d7/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "4336819097f8777b9ca64ebe49bc0bc77ae3c5f5",
+          "sha256": "71b111620fa32c17a80ccd6db2da759d31a591e497d8b5f382174f59d1b59d49",
+          "bytes": 11343,
+          "url": "https://github.com/huggingface/pytorch-image-models/blob/43b549bfe9d680bc94284cfd0b611152d18e97d7/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "open-mmlab/mmdetection",
+      "categories": [
+        "vision"
+      ],
+      "use": "目标检测的配置、数据和评估",
+      "boundary": "IoU、mAP、类别定义和评估协议必须固定。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "open-mmlab/mmdetection",
+      "url": "https://github.com/open-mmlab/mmdetection",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "OpenMMLab Detection Toolbox and Benchmark",
+      "default_branch": "main",
+      "head": "cfd5d3a985b0249de009b67d04f37263e11cdf3d",
+      "pushed_at": "2024-08-21T02:01:07Z",
+      "metadata_observed_at": "2026-11-15T11:44:08+08:00",
+      "sources_observed_at": "2026-11-15T11:44:32+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "34f7f0b8f90ad29f5250c8c86366e0a02a30142d",
+          "sha256": "a3b450a75ea3c21791acdc474f305710b27a38f858d409f0dba801b19885e63e",
+          "bytes": 26211,
+          "url": "https://github.com/open-mmlab/mmdetection/blob/cfd5d3a985b0249de009b67d04f37263e11cdf3d/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "1bfc23e48f92245b229cdd57c77e79bc10a1cc27",
+          "sha256": "874b8b2e6f12306a1ff7812c068a0dbf880418b8ac1f7190382bd6c6da9f23a1",
+          "bytes": 11398,
+          "url": "https://github.com/open-mmlab/mmdetection/blob/cfd5d3a985b0249de009b67d04f37263e11cdf3d/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "open-mmlab/mmsegmentation",
+      "categories": [
+        "vision"
+      ],
+      "use": "语义分割、训练与 mIoU",
+      "boundary": "忽略标签、类别映射和图像级拆分影响结果。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "open-mmlab/mmsegmentation",
+      "url": "https://github.com/open-mmlab/mmsegmentation",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "OpenMMLab Semantic Segmentation Toolbox and Benchmark.",
+      "default_branch": "main",
+      "head": "b040e147adfa027bbc071b624bedf0ae84dfc922",
+      "pushed_at": "2024-08-13T08:53:34Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "79ecdb7111cb2ba157cb5c55e551aa5ad68f70a4",
+          "sha256": "28878eab8405acca90bc0720a653cd2ae612b7c32b02bf0d599128e6cbf7d5b2",
+          "bytes": 26159,
+          "url": "https://github.com/open-mmlab/mmsegmentation/blob/b040e147adfa027bbc071b624bedf0ae84dfc922/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "38e625bf59f9ba58f16f758bebaad865030c1e3e",
+          "sha256": "98b89585ea28b480797870476cd82584425432d1badbe01ac2b9b9bc9cbc2a9b",
+          "bytes": 11422,
+          "url": "https://github.com/open-mmlab/mmsegmentation/blob/b040e147adfa027bbc071b624bedf0ae84dfc922/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/detectron2",
+      "categories": [
+        "vision"
+      ],
+      "use": "检测与分割的研究实现",
+      "boundary": "CUDA、编译器、权重和依赖兼容性另测。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "facebookresearch/detectron2",
+      "url": "https://github.com/facebookresearch/detectron2",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Detectron2 is a platform for object detection, segmentation and other visual recognition tasks.",
+      "default_branch": "main",
+      "head": "247691a1c292654867deb35cabb27f18d75a1363",
+      "pushed_at": "2026-10-27T09:21:49Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "7d99b46e415ad06b7dd69e4b6a6b302ffea1d303",
+          "sha256": "54df9b531f3507801a27973f8f2f904375716036d9869424ccacd033e8889cc3",
+          "bytes": 2527,
+          "url": "https://github.com/facebookresearch/detectron2/blob/247691a1c292654867deb35cabb27f18d75a1363/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "cd1b070674331757508398d99c830664dce6eaec",
+          "sha256": "ceb78ee847e76f67a6a521a5732dc3373aed07eee003d738a572dc96705f08ff",
+          "bytes": 10256,
+          "url": "https://github.com/facebookresearch/detectron2/blob/247691a1c292654867deb35cabb27f18d75a1363/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "kornia/kornia",
+      "categories": [
+        "vision"
+      ],
+      "use": "可微视觉运算和 augmentation",
+      "boundary": "增强应遵循训练/验证边界，不能任意改标签语义。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "kornia/kornia",
+      "url": "https://github.com/kornia/kornia",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+      "default_branch": "main",
+      "head": "37cb8f5eba774046cbb625f3e8ad3bd461af0f83",
+      "pushed_at": "2026-11-14T22:38:50Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "189c278a18607f25472b45e975e3a1372ea2f0af",
+          "sha256": "3fd79d535fbaf6a2084a61301bacc47d444b9ddb517da1dc03c1378d40a718e4",
+          "bytes": 21983,
+          "url": "https://github.com/kornia/kornia/blob/37cb8f5eba774046cbb625f3e8ad3bd461af0f83/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d9a10c0d8e868ebf8da0b3dc95bb0be634c34bfe",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "bytes": 10173,
+          "url": "https://github.com/kornia/kornia/blob/37cb8f5eba774046cbb625f3e8ad3bd461af0f83/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pytorch/audio",
+      "categories": [
+        "audio"
+      ],
+      "use": "音频 I/O、变换与模型",
+      "boundary": "检查维护阶段、后端迁移和版本支持，不默认功能持续扩展。",
+      "source_review_note": "固定 README 明确处于 maintenance phase，部分功能已从2.8弃用并在2.9移除；不是当前特性持续扩展承诺。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pytorch/audio",
+      "url": "https://github.com/pytorch/audio",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
+      "default_branch": "main",
+      "head": "9b19155e6fce04a83704eadc85d3dfe99e520c0c",
+      "pushed_at": "2026-11-14T11:35:04Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "BSD-2-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "a9085907f7e3138fb9b5aa686bae001800c3df90",
+          "sha256": "8144337ad4aaa5ce379257da4ff1f8249136db9b7c67ba20ef19781136df7bf2",
+          "bytes": 5896,
+          "url": "https://github.com/pytorch/audio/blob/9b19155e6fce04a83704eadc85d3dfe99e520c0c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "1bec23eaf1dd562ae3d3216420b1b1bbfbd39cbc",
+          "sha256": "93a58861a858cc108e6b6b833e08e76e8b2a66339e4a8007c8a5a8c1ff9c40d6",
+          "bytes": 1338,
+          "url": "https://github.com/pytorch/audio/blob/9b19155e6fce04a83704eadc85d3dfe99e520c0c/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "speechbrain/speechbrain",
+      "categories": [
+        "audio"
+      ],
+      "use": "语音训练、识别和相关研究配方",
+      "boundary": "按说话人/会话隔离并核对语料及权重条款。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "speechbrain/speechbrain",
+      "url": "https://github.com/speechbrain/speechbrain",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A PyTorch-based Speech Toolkit",
+      "default_branch": "develop",
+      "head": "c0241278f93ef02cd5191f03caf4e5f8e1292bf6",
+      "pushed_at": "2026-10-14T23:12:55Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "9b636e267c87ba9baa23483b05192cffe7e1a5da",
+          "sha256": "2a14565733f68dd73f8d64006cb2b9ff0d8c3027ef26c80b5a3d34cce75bb92b",
+          "bytes": 23162,
+          "url": "https://github.com/speechbrain/speechbrain/blob/c0241278f93ef02cd5191f03caf4e5f8e1292bf6/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "url": "https://github.com/speechbrain/speechbrain/blob/c0241278f93ef02cd5191f03caf4e5f8e1292bf6/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "openai/whisper",
+      "categories": [
+        "audio"
+      ],
+      "use": "语音识别与转录",
+      "boundary": "语言、噪声、时间戳与幻觉错误须按固定样本评估。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "openai/whisper",
+      "url": "https://github.com/openai/whisper",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+      "default_branch": "main",
+      "head": "86098128c0b4f24f0e2aa2994de830614b474227",
+      "pushed_at": "2026-08-31T17:19:19Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "196b48f62d3b6f0b77bac2b7dbc2df5e4cfb070b",
+          "sha256": "38c180c2a8d8ba628a3e131ad42bf06c8a51bb681efb30fbe28d5a0f4b65f288",
+          "bytes": 8246,
+          "url": "https://github.com/openai/whisper/blob/86098128c0b4f24f0e2aa2994de830614b474227/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d25552598bb9c5400612159ed4bab92ce12a5ce5",
+          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+          "bytes": 1063,
+          "url": "https://github.com/openai/whisper/blob/86098128c0b4f24f0e2aa2994de830614b474227/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/diffusers",
+      "categories": [
+        "generative"
+      ],
+      "use": "扩散模型、scheduler 与生成管线",
+      "boundary": "库、权重、训练数据和生成内容的使用条件分开检查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "huggingface/diffusers",
+      "url": "https://github.com/huggingface/diffusers",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch.",
+      "default_branch": "main",
+      "head": "43e30028af5120d8b0868cb6975b9fad39cc4fab",
+      "pushed_at": "2026-11-15T01:57:29Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "aaf5c97e09c3b12c3dc1a92756382df882ec5425",
+          "sha256": "7983ae4d23ec43664c587027d7462ba8a742ddff784430dfb7fd3cea8ba5523c",
+          "bytes": 14610,
+          "url": "https://github.com/huggingface/diffusers/blob/43e30028af5120d8b0868cb6975b9fad39cc4fab/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "038e32f6445e8f265bde482613cf0d2f43d86dbc",
+          "sha256": "f9e2070c247517b1ddf65f7b11b393484a18da91a958fd18a97bd0f241c3125c",
+          "bytes": 11357,
+          "url": "https://github.com/huggingface/diffusers/blob/43e30028af5120d8b0868cb6975b9fad39cc4fab/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "CompVis/latent-diffusion",
+      "categories": [
+        "generative"
+      ],
+      "use": "潜空间扩散的研究实现",
+      "boundary": "研究实现不代表生产支持；模型和数据权利独立。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "CompVis/latent-diffusion",
+      "url": "https://github.com/CompVis/latent-diffusion",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "default_branch": "main",
+      "head": "a506df5756472e2ebaf9078affdde2c4f1502cd4",
+      "pushed_at": "2024-02-29T05:29:47Z",
+      "metadata_observed_at": "2026-11-15T11:44:33+08:00",
+      "sources_observed_at": "2026-11-15T11:44:35+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "7bdf52a172b526dbfb7f4c67d8005da47ad21ee4",
+          "sha256": "d50d26bdbb72122500e1e03f331df582cbb258a9dc8c9c8b0c348e46ed17c268",
+          "bytes": 21672,
+          "url": "https://github.com/CompVis/latent-diffusion/blob/a506df5756472e2ebaf9078affdde2c4f1502cd4/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "be24ebeed0fb31665dc3c33d2610d35f77b12709",
+          "sha256": "2ba3d36721ed0263cbc1050936ba34809d296fe629d802f7bc453007faefbdb3",
+          "bytes": 1102,
+          "url": "https://github.com/CompVis/latent-diffusion/blob/a506df5756472e2ebaf9078affdde2c4f1502cd4/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "lucidrains/denoising-diffusion-pytorch",
+      "categories": [
+        "generative"
+      ],
+      "use": "扩散去噪流程的学习实现",
+      "boundary": "个人实现不等同原论文作者实现或已复现论文结果。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "lucidrains/denoising-diffusion-pytorch",
+      "url": "https://github.com/lucidrains/denoising-diffusion-pytorch",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Implementation of Denoising Diffusion Probabilistic Model in Pytorch",
+      "default_branch": "main",
+      "head": "c8155b1dc622e3f1ef0d53dc6e5a570ca105bcec",
+      "pushed_at": "2026-09-29T14:13:08Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "e929382bc0cc44a3e1b3b64442142672c0e07222",
+          "sha256": "f5da81ad6b0bb307a9734addc09a325f79b5c9807660a8a3d5a359d95db153a2",
+          "bytes": 13692,
+          "url": "https://github.com/lucidrains/denoising-diffusion-pytorch/blob/c8155b1dc622e3f1ef0d53dc6e5a570ca105bcec/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "cad43213602892aadc2290cca7afa74cc9f6af64",
+          "sha256": "02cf6ed7df17f94fafa61e67a089ee51faac006db35ffa173c70e6763c253cf6",
+          "bytes": 1066,
+          "url": "https://github.com/lucidrains/denoising-diffusion-pytorch/blob/c8155b1dc622e3f1ef0d53dc6e5a570ca105bcec/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "Farama-Foundation/Gymnasium",
+      "categories": [
+        "reinforcement"
+      ],
+      "use": "环境 API、状态和 episode 边界",
+      "boundary": "环境本身不是 RL 算法，terminated 与 truncated 要区分。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "Farama-Foundation/Gymnasium",
+      "url": "https://github.com/Farama-Foundation/Gymnasium",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A standard API for single-agent reinforcement learning environments, with popular reference environments and related utilities (formerly Gym)",
+      "default_branch": "main",
+      "head": "68c3f95def1b9d91922db5363a28dc1d4a83a960",
+      "pushed_at": "2026-11-12T11:53:47Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "bd408058e8bf3ea72c102be72d3e8ff40ee65c9a",
+          "sha256": "17eecd81353e49e50b8843d42af88a88aef846bf67d423f9f86a99461621676c",
+          "bytes": 6540,
+          "url": "https://github.com/Farama-Foundation/Gymnasium/blob/68c3f95def1b9d91922db5363a28dc1d4a83a960/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "ac10bf443756cdc02724943ac09021092ce9e737",
+          "sha256": "7dacaa9772e856aee6943b32ef663d3634d91d72ec7bbc74d136943673f91e18",
+          "bytes": 1104,
+          "url": "https://github.com/Farama-Foundation/Gymnasium/blob/68c3f95def1b9d91922db5363a28dc1d4a83a960/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "DLR-RM/stable-baselines3",
+      "categories": [
+        "reinforcement"
+      ],
+      "use": "常用强化学习算法与训练",
+      "boundary": "独立环境种子、评估 episode 和 reward 口径必须固定。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "DLR-RM/stable-baselines3",
+      "url": "https://github.com/DLR-RM/stable-baselines3",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms. ",
+      "default_branch": "master",
+      "head": "0cdcd200deef06b9ad0af72f6ddfb07c06c6df39",
+      "pushed_at": "2026-10-26T09:35:00Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "66d20f64a092c5af9a5e24b8430d7e2025c42a44",
+          "sha256": "ad3bef2a8c57b53dbd1ef5dbc864d110444f5d5ed6fcddb447866928602675bd",
+          "bytes": 16229,
+          "url": "https://github.com/DLR-RM/stable-baselines3/blob/0cdcd200deef06b9ad0af72f6ddfb07c06c6df39/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "0951e29b4f9a29265d8f805f8fbba6e948030b17",
+          "sha256": "2d8fbeee75e0acd13e75b30470b3521b12fb55c26c90c2060c6bd525345870a9",
+          "bytes": 1075,
+          "url": "https://github.com/DLR-RM/stable-baselines3/blob/0cdcd200deef06b9ad0af72f6ddfb07c06c6df39/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "ray-project/ray",
+      "categories": [
+        "reinforcement",
+        "deployment"
+      ],
+      "use": "分布式任务、调参与 RL 工具链",
+      "boundary": "Ray 核心、RLlib 和托管服务不同；集群成本另测。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "ray-project/ray",
+      "url": "https://github.com/ray-project/ray",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.",
+      "default_branch": "master",
+      "head": "76d004dab6f68ee515f9472866aa41489ca7a7e9",
+      "pushed_at": "2026-11-15T02:15:23Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "a51e52cf34c013e2a7be0663e24b0fd098caf36c",
+          "sha256": "27d1e25d12e737128e04b73efb0f55c1514011a6c6a137ee9f0b692db403034e",
+          "bytes": 5554,
+          "url": "https://github.com/ray-project/ray/blob/76d004dab6f68ee515f9472866aa41489ca7a7e9/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "c247a8575b35eea321f584a57a67cfa93db6d654",
+          "sha256": "cc68f9a408c8edf33c900f645846a7d8388a23e4b92a4a9fce7499c372b2acc0",
+          "bytes": 27249,
+          "url": "https://github.com/ray-project/ray/blob/76d004dab6f68ee515f9472866aa41489ca7a7e9/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "vwxyzjn/cleanrl",
+      "categories": [
+        "reinforcement"
+      ],
+      "use": "单文件强化学习实现",
+      "boundary": "简洁实现不等于跨环境可直接复用结果。",
+      "source_review_note": "固定 LICENSE 主体为 MIT，另列改编代码的 Apache 及其他通知；按文件检查，不把 NOASSERTION 当作无许可。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "vwxyzjn/cleanrl",
+      "url": "https://github.com/vwxyzjn/cleanrl",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "High-quality single file implementation of Deep Reinforcement Learning algorithms with research-friendly features (PPO, DQN, C51, DDPG, TD3, SAC, PPG)",
+      "default_branch": "master",
+      "head": "fe8d8a03c41a7ef5b523e2e354bd01c363e786bb",
+      "pushed_at": "2026-04-20T10:57:15Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "NOASSERTION",
+      "license_class": "needs-license-review",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "109427f99fcaad614e991719cc202fa4850dd444",
+          "sha256": "874fade1a9cd053004c77579100bf12fc4223cb2bbc03d0b3bd1356ab30b55a5",
+          "bytes": 15222,
+          "url": "https://github.com/vwxyzjn/cleanrl/blob/fe8d8a03c41a7ef5b523e2e354bd01c363e786bb/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "c4e562311a2917da1c770a80860d223965b41770",
+          "sha256": "c6c269472eecb009754856b5fe1029ee53b99b986f57bf22ad7c747b04799c69",
+          "bytes": 15912,
+          "url": "https://github.com/vwxyzjn/cleanrl/blob/fe8d8a03c41a7ef5b523e2e354bd01c363e786bb/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pyro-ppl/pyro",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "概率程序、变分推断和后验检查",
+      "boundary": "推断收敛与后验预测检查不能省略。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pyro-ppl/pyro",
+      "url": "https://github.com/pyro-ppl/pyro",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Deep universal probabilistic programming with Python and PyTorch",
+      "default_branch": "dev",
+      "head": "a31bc1784707268cd79df77ead4c7a47062f0193",
+      "pushed_at": "2026-10-05T18:42:13Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "66b7407e423a586e994ac2d14453d96301b96a59",
+          "sha256": "39e7535945abdecc28e81e2ec9d2761dbb49c9bc6c99837adcef5778e665db4c",
+          "bytes": 4629,
+          "url": "https://github.com/pyro-ppl/pyro/blob/a31bc1784707268cd79df77ead4c7a47062f0193/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.md",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "url": "https://github.com/pyro-ppl/pyro/blob/a31bc1784707268cd79df77ead4c7a47062f0193/LICENSE.md"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pyro-ppl/numpyro",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "JAX 概率推断",
+      "boundary": "设备精度、采样诊断和链间收敛须记录。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pyro-ppl/numpyro",
+      "url": "https://github.com/pyro-ppl/numpyro",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Probabilistic programming with NumPy powered by JAX for autograd and JIT compilation to GPU/TPU/CPU.",
+      "default_branch": "master",
+      "head": "3728ea15d04e17346f33899c761525524360090d",
+      "pushed_at": "2026-11-11T12:18:00Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "ce73bb6abf38aeee02d111e1405f8e8f679b4b3a",
+          "sha256": "f80a2560cf67a490d70f588cc5d8e90d3ee548d9346113429e97b7c36f9461e1",
+          "bytes": 34457,
+          "url": "https://github.com/pyro-ppl/numpyro/blob/3728ea15d04e17346f33899c761525524360090d/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.md",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "url": "https://github.com/pyro-ppl/numpyro/blob/3728ea15d04e17346f33899c761525524360090d/LICENSE.md"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pymc-devs/pymc",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "贝叶斯模型与采样诊断",
+      "boundary": "先验敏感性和 posterior predictive 不是点预测精度。",
+      "source_review_note": "固定 LICENSE 声明 Apache-2.0，含 AePPL 的 MIT 代码及历史声明；按组件检查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pymc-devs/pymc",
+      "url": "https://github.com/pymc-devs/pymc",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Bayesian Modeling and Probabilistic Programming in Python",
+      "default_branch": "main",
+      "head": "bc3904be4119596442d16593745fe4e2894297e9",
+      "pushed_at": "2026-11-14T14:29:19Z",
+      "metadata_observed_at": "2026-11-15T11:44:36+08:00",
+      "sources_observed_at": "2026-11-15T11:44:37+08:00",
+      "license_signal": "NOASSERTION",
+      "license_class": "needs-license-review",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "42d134552988716f325201c171b8b0280c5fdb00",
+          "sha256": "6acf764dca0cff1c354c87086d5d8d3ca6b29ff03c77b789dcf52b6bdced6138",
+          "bytes": 15814,
+          "url": "https://github.com/pymc-devs/pymc/blob/bc3904be4119596442d16593745fe4e2894297e9/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "8a53247c40c863c3abb13c2e9fb059af7c1e0e47",
+          "sha256": "7ff724eb577182bb98aedb227589dc71dd5111781a3698a84c1fffc2b63dd0eb",
+          "bytes": 12865,
+          "url": "https://github.com/pymc-devs/pymc/blob/bc3904be4119596442d16593745fe4e2894297e9/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "cornellius-gp/gpytorch",
+      "categories": [
+        "probabilistic"
+      ],
+      "use": "高斯过程与不确定性",
+      "boundary": "训练规模、近似和区间校准独立验证。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "cornellius-gp/gpytorch",
+      "url": "https://github.com/cornellius-gp/gpytorch",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A highly efficient implementation of Gaussian Processes in PyTorch",
+      "default_branch": "main",
+      "head": "e1302d24cbd334649ada70608cbe98e903a47a83",
+      "pushed_at": "2026-10-02T15:06:34Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "d8b5c60b877d7433aabd85ac83d3b35526624db4",
+          "sha256": "6ece829d9b6cb58a38ef887aa879fd1d2b0f1ed06e9befb61688e925b83a0c3a",
+          "bytes": 5874,
+          "url": "https://github.com/cornellius-gp/gpytorch/blob/e1302d24cbd334649ada70608cbe98e903a47a83/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "e0942c5e70f41b3f636f9292c2390bc35e1d15eb",
+          "sha256": "56de43b0c207a90111c081397829a0ff00c941b79395e250fe56108267dc2cf3",
+          "bytes": 1069,
+          "url": "https://github.com/cornellius-gp/gpytorch/blob/e1302d24cbd334649ada70608cbe98e903a47a83/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "sktime/sktime",
+      "categories": [
+        "time-series"
+      ],
+      "use": "时间序列预测、变换和评估",
+      "boundary": "使用时间顺序/滚动切分，不套用普通随机 CV。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "sktime/sktime",
+      "url": "https://github.com/sktime/sktime",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A unified framework for machine learning with time series",
+      "default_branch": "main",
+      "head": "b5338e0b59de48fa5ace5c52c7007b1c2bc4801b",
+      "pushed_at": "2026-11-14T00:27:38Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "fc7876a5bb8138a36ca57bcc9d7d254566dff29b",
+          "sha256": "356bc3bbc995d941f109d479be53bb01079bd0e33477a5dfff3aa7528b0f1109",
+          "bytes": 16486,
+          "url": "https://github.com/sktime/sktime/blob/b5338e0b59de48fa5ace5c52c7007b1c2bc4801b/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "e321b92c174d19654c0bf83f6ee73f50b024f92c",
+          "sha256": "4f5bdd0f809b9e09f22eab0459a5b8f35fc18fc0207eeadbc2f6107288d2132d",
+          "bytes": 1533,
+          "url": "https://github.com/sktime/sktime/blob/b5338e0b59de48fa5ace5c52c7007b1c2bc4801b/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "sktime/pytorch-forecasting",
+      "categories": [
+        "time-series"
+      ],
+      "use": "深度时序模型和 covariate 数据组织",
+      "boundary": "known-future 与 observed-only 变量必须真实可用。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "sktime/pytorch-forecasting",
+      "url": "https://github.com/sktime/pytorch-forecasting",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Time series forecasting with PyTorch",
+      "default_branch": "main",
+      "head": "519f05dd975a74bb1de105a4c1b92a760ee95c96",
+      "pushed_at": "2026-11-14T18:09:39Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "6f7376f510d3ab8596297d4d5419e5d61f4f480f",
+          "sha256": "213a8dbc8b954fc3a26af109780a36338903561d1273fe3201c195209abe1251",
+          "bytes": 10725,
+          "url": "https://github.com/sktime/pytorch-forecasting/blob/519f05dd975a74bb1de105a4c1b92a760ee95c96/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "f49038aa80734711f126f0c3c18074ebcb41931a",
+          "sha256": "92cacb2bf4a9b3fdc87fb43b6830584d46350867ca73a9b842aaf573f54eb4d0",
+          "bytes": 1137,
+          "url": "https://github.com/sktime/pytorch-forecasting/blob/519f05dd975a74bb1de105a4c1b92a760ee95c96/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "unit8co/darts",
+      "categories": [
+        "time-series"
+      ],
+      "use": "多类预测模型和回测接口",
+      "boundary": "标准化、外生变量及预测起点遵守 point-in-time。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "unit8co/darts",
+      "url": "https://github.com/unit8co/darts",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A python library for user-friendly forecasting and anomaly detection on time series.",
+      "default_branch": "master",
+      "head": "e679f7bea284734b15961c9ee3c4e4fc3fcd7fd2",
+      "pushed_at": "2026-11-13T15:06:53Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "b2779b0d6373dddc9c88f3bb651355b87d1df2d4",
+          "sha256": "43a2dc91a81a9e5694878bb80e51114dd30f3e65f0917991a8757df14fb06c15",
+          "bytes": 67296,
+          "url": "https://github.com/unit8co/darts/blob/e679f7bea284734b15961c9ee3c4e4fc3fcd7fd2/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "622e5a67879dd13fd8a855989c2b0a3085c91b07",
+          "sha256": "a9f5092af3beb16a4e210725e991ebfc9bcca4420644730e969f8418173eb31e",
+          "bytes": 11338,
+          "url": "https://github.com/unit8co/darts/blob/e679f7bea284734b15961c9ee3c4e4fc3fcd7fd2/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "pyg-team/pytorch_geometric",
+      "categories": [
+        "graph"
+      ],
+      "use": "图神经网络、采样和数据",
+      "boundary": "transductive 与 inductive 切分不同，边和节点泄漏需防范。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pyg-team/pytorch_geometric",
+      "url": "https://github.com/pyg-team/pytorch_geometric",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Graph Neural Network Library for PyTorch",
+      "default_branch": "master",
+      "head": "d1f2f8642387b6e0563d6aee227c39130746c738",
+      "pushed_at": "2026-11-06T06:58:35Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "83b0afb140ce86a08ff8622dc15ac367e738daec",
+          "sha256": "2acfdafff9ba526261751e9b7f02fcdcc9c2aacc7be0a528ced9db41136b4978",
+          "bytes": 60641,
+          "url": "https://github.com/pyg-team/pytorch_geometric/blob/d1f2f8642387b6e0563d6aee227c39130746c738/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "1f622cff1ea1df457a7a99aff1e2b875e112604d",
+          "sha256": "89cfb6edc309735916a0c1189dccf761add4af6062ddb34b5a26f60d3efadfea",
+          "bytes": 1067,
+          "url": "https://github.com/pyg-team/pytorch_geometric/blob/d1f2f8642387b6e0563d6aee227c39130746c738/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "dmlc/dgl",
+      "categories": [
+        "graph"
+      ],
+      "use": "图模型、采样与计算",
+      "boundary": "依赖/硬件支持和图拆分协议不能假定兼容。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "dmlc/dgl",
+      "url": "https://github.com/dmlc/dgl",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Python package built to ease deep learning on graph, on top of existing DL frameworks.",
+      "default_branch": "master",
+      "head": "3d16000b4170fa741ed9e9667f22ba84d3493026",
+      "pushed_at": "2025-07-31T23:53:10Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "30e1c7388db9a13d5609d689bce5c9aa6432ce21",
+          "sha256": "342d7353d319eeba6f35acfe01a099332f47b3e9b7c1177e46100a712b4d2134",
+          "bytes": 32164,
+          "url": "https://github.com/dmlc/dgl/blob/3d16000b4170fa741ed9e9667f22ba84d3493026/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "url": "https://github.com/dmlc/dgl/blob/3d16000b4170fa741ed9e9667f22ba84d3493026/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "optuna/optuna",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "超参搜索与预算管理",
+      "boundary": "搜索只见验证折，最终测试不能反复参与选型。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "optuna/optuna",
+      "url": "https://github.com/optuna/optuna",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A hyperparameter optimization framework",
+      "default_branch": "master",
+      "head": "abf8914d48571120574469575d37c4b0929b7f0f",
+      "pushed_at": "2026-11-13T09:03:39Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "3f4568ad474db72d8d512d3894607e89030666ca",
+          "sha256": "75ad3e0de21c5cade254143d329195cdeee8bdb5942bc7c66eedbb696f71ad24",
+          "bytes": 12204,
+          "url": "https://github.com/optuna/optuna/blob/abf8914d48571120574469575d37c4b0929b7f0f/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "6bbc1aa30fa6b9da220988c696b0750bd475c5db",
+          "sha256": "c3df8e8523cf46be4b366ee7dd11578454b10ea5ec5159e57df849513aafe059",
+          "bytes": 1081,
+          "url": "https://github.com/optuna/optuna/blob/abf8914d48571120574469575d37c4b0929b7f0f/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "mlflow/mlflow",
+      "categories": [
+        "evaluation",
+        "deployment"
+      ],
+      "use": "实验跟踪、模型记录与版本",
+      "boundary": "跟踪工具不保证实验公平或数据可追溯。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "mlflow/mlflow",
+      "url": "https://github.com/mlflow/mlflow",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
+      "default_branch": "master",
+      "head": "4ce11db17ae3d2427ab7749dc660dd776472727a",
+      "pushed_at": "2026-11-15T01:57:09Z",
+      "metadata_observed_at": "2026-11-15T11:44:39+08:00",
+      "sources_observed_at": "2026-11-15T11:44:40+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "2b332a2b7614516f0d508f9f957b9e7992e01bec",
+          "sha256": "5dc3beb3c6e9acf515b4898a24fbd1bf3d0dc7d6bfa5439df7f9164bc42d0193",
+          "bytes": 33387,
+          "url": "https://github.com/mlflow/mlflow/blob/4ce11db17ae3d2427ab7749dc660dd776472727a/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE.txt",
+          "blob_sha": "db7cb10b5e330d56b40370bc178974ccabe71458",
+          "sha256": "6395355de6f391afff35996a30fb41b189b4991a4cb54993ace35ab69a0bfa28",
+          "bytes": 11382,
+          "url": "https://github.com/mlflow/mlflow/blob/4ce11db17ae3d2427ab7749dc660dd776472727a/LICENSE.txt"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "shap/shap",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "模型解释与特征归因",
+      "boundary": "归因不是因果效应，对背景集和相关性敏感。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "shap/shap",
+      "url": "https://github.com/shap/shap",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A game theoretic approach to explain the output of any machine learning model.",
+      "default_branch": "main",
+      "head": "b1db09572ebd4072a8a6e9285cc19bd763c42c11",
+      "pushed_at": "2026-11-14T09:09:25Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "eed325739fdd484895396d307cee59369689516b",
+          "sha256": "9078dc466e9c9338e47960131b42d474f221415fce2bd3226366afaeb6b9f9f6",
+          "bytes": 22009,
+          "url": "https://github.com/shap/shap/blob/b1db09572ebd4072a8a6e9285cc19bd763c42c11/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "10ad600d6ac6ced9c6cc4ab9798f9d1d39e4c0a0",
+          "sha256": "cf5c26305c632e5451b6eed7e0964a36c4cec1102f0c6467db063b3483a19127",
+          "bytes": 1081,
+          "url": "https://github.com/shap/shap/blob/b1db09572ebd4072a8a6e9285cc19bd763c42c11/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "meta-pytorch/captum",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "PyTorch 模型解释",
+      "boundary": "解释结果需要 sanity checks，不能当正确性证明。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "pytorch/captum",
+      "url": "https://github.com/meta-pytorch/captum",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Model interpretability and understanding for PyTorch",
+      "default_branch": "master",
+      "head": "092cf14cd2a34c57574131de9f727f788011097a",
+      "pushed_at": "2026-11-13T10:13:13Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "3c7001b1c036eae5473ccd6d09688fa0e0dd1d8f",
+          "sha256": "475c8d833d1252aff10e779c4a9862bba6a02d01eb55d582ef976ee88040396e",
+          "bytes": 22409,
+          "url": "https://github.com/meta-pytorch/captum/blob/092cf14cd2a34c57574131de9f727f788011097a/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "c20307d0ad7f066dc048a07429a8b2ee1103e97b",
+          "sha256": "f19a657160766ccb3eb8e79ca25332a69438ce046e8d31bcea77fefee4395357",
+          "bytes": 1512,
+          "url": "https://github.com/meta-pytorch/captum/blob/092cf14cd2a34c57574131de9f727f788011097a/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "evidentlyai/evidently",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "数据/模型评估和漂移检查",
+      "boundary": "漂移不自动等于性能下降，更不应自动交易或重训。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "evidentlyai/evidently",
+      "url": "https://github.com/evidentlyai/evidently",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Evidently is ​​an open-source ML and LLM observability framework. Evaluate, test, and monitor any AI-powered system or data pipeline. From tabular data to Gen AI. 100+ metrics.",
+      "default_branch": "main",
+      "head": "34771fe41c08ca074d96a52aaf4a45cd640cbaf5",
+      "pushed_at": "2026-09-29T08:32:43Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "fabe5d656f71a6fe34088f4f71917e5f93ea956b",
+          "sha256": "c8ac72c2363a2f0b7c36f38a6e7801817e5659507a2e6a37212702ad1cd51c20",
+          "bytes": 8484,
+          "url": "https://github.com/evidentlyai/evidently/blob/34771fe41c08ca074d96a52aaf4a45cd640cbaf5/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "f339cc7fc8fe13467e1b3f3a7afa02b29714b2bb",
+          "sha256": "379054a067cbe8e134e084287550e9391d2804636687c4723f80a2c58a463f0e",
+          "bytes": 11353,
+          "url": "https://github.com/evidentlyai/evidently/blob/34771fe41c08ca074d96a52aaf4a45cd640cbaf5/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "fairlearn/fairlearn",
+      "categories": [
+        "evaluation"
+      ],
+      "use": "分群指标和公平性评估",
+      "boundary": "公平性依情境和约束而定，不能用一个总分替代。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "fairlearn/fairlearn",
+      "url": "https://github.com/fairlearn/fairlearn",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A Python package to assess and improve fairness of machine learning models.",
+      "default_branch": "main",
+      "head": "4b2aa83bddf0b0e7ae1202e787a6ec6050a24204",
+      "pushed_at": "2026-11-07T19:31:51Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.rst",
+          "blob_sha": "a19a536ede2531c5b46199a3eeb9623120a8671b",
+          "sha256": "bfede5fb951d180db9fb5345adb1713977ba98e5b151357a52c24abd2992a4f6",
+          "bytes": 6082,
+          "url": "https://github.com/fairlearn/fairlearn/blob/4b2aa83bddf0b0e7ae1202e787a6ec6050a24204/README.rst"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "abef27e17206c6dbe20de33fb24f7c7ce3ae490d",
+          "sha256": "d5256e70bf84093c7de391e7a5771f37cfb91cb720c308ea983dce6101dc10ab",
+          "bytes": 1168,
+          "url": "https://github.com/fairlearn/fairlearn/blob/4b2aa83bddf0b0e7ae1202e787a6ec6050a24204/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "onnx/onnx",
+      "categories": [
+        "deployment"
+      ],
+      "use": "模型交换格式和算子协议",
+      "boundary": "导出成功不代表算子支持或数值等价。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "onnx/onnx",
+      "url": "https://github.com/onnx/onnx",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "Open standard for machine learning interoperability",
+      "default_branch": "main",
+      "head": "3c41120b9c69657a1dd13407b080bd451ed06c9c",
+      "pushed_at": "2026-11-13T19:21:44Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "3526422d4d0327272381b4b4a122b4c5c25b6d12",
+          "sha256": "09f465473c707f20a26b326db950806f2cf44d3d2f7621041508e1f1c35cb631",
+          "bytes": 8200,
+          "url": "https://github.com/onnx/onnx/blob/3c41120b9c69657a1dd13407b080bd451ed06c9c/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "url": "https://github.com/onnx/onnx/blob/3c41120b9c69657a1dd13407b080bd451ed06c9c/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "microsoft/onnxruntime",
+      "categories": [
+        "deployment"
+      ],
+      "use": "ONNX 执行与优化",
+      "boundary": "分别验证 provider、精度、误差、冷启动与热延迟。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "microsoft/onnxruntime",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator",
+      "default_branch": "main",
+      "head": "1f539821173ae0647165c42f408513460fed18d9",
+      "pushed_at": "2026-11-15T00:32:24Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "MIT",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "3e4e46f9aa04a769e83790037da70908e4bc1c9e",
+          "sha256": "d9de78283cf00a77f907f2183fb8df1dda8706b79e4ab3517f2a06c6de0c6a4c",
+          "bytes": 3087,
+          "url": "https://github.com/microsoft/onnxruntime/blob/1f539821173ae0647165c42f408513460fed18d9/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "48bc6bb4996ac924359e8e28b9ae88970e5ed3fc",
+          "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+          "bytes": 1073,
+          "url": "https://github.com/microsoft/onnxruntime/blob/1f539821173ae0647165c42f408513460fed18d9/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "bentoml/BentoML",
+      "categories": [
+        "deployment"
+      ],
+      "use": "模型服务和部署组织",
+      "boundary": "本地示例不等于生产认证、隔离或吞吐保证。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "bentoml/BentoML",
+      "url": "https://github.com/bentoml/BentoML",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "The easiest way to serve AI apps and models - Build Model Inference APIs, Job queues, LLM apps, Multi-model pipelines, and more!",
+      "default_branch": "main",
+      "head": "942344be7860065736f9d615de517ef043db2665",
+      "pushed_at": "2026-11-02T17:14:27Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "f3fa37f9c4ab176951d40e20f16cbfc07efc798b",
+          "sha256": "1d6c4b7b86b6f2bbc94280b59dabb30e88ef8231cd6fa5e670f0ad3c5f822f0c",
+          "bytes": 8820,
+          "url": "https://github.com/bentoml/BentoML/blob/942344be7860065736f9d615de517ef043db2665/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "231bcb00f2e3fc427b6e701bc421da36c597a0f9",
+          "sha256": "ec03feec4b53dc334141f77bd630ecbf3308bbe4899e3c33981982613869a87f",
+          "bytes": 11347,
+          "url": "https://github.com/bentoml/BentoML/blob/942344be7860065736f9d615de517ef043db2665/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "vllm-project/vllm",
+      "categories": [
+        "deployment",
+        "transformers-llm"
+      ],
+      "use": "LLM 推理与服务",
+      "boundary": "模型支持、硬件、并发和 token 延迟需要实际测量。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "default_branch": "main",
+      "head": "6c7e48049332df0c22412fc782a90518d7ff1a2e",
+      "pushed_at": "2026-11-15T03:40:05Z",
+      "metadata_observed_at": "2026-11-15T11:44:41+08:00",
+      "sources_observed_at": "2026-11-15T11:44:43+08:00",
+      "license_signal": "Apache-2.0",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "d01261427d0535d9e8f2494f1fc6704e6488bbf4",
+          "sha256": "ba4998a8520051250ec81c60187203745e6bc0b9c197af6e1b6a73143f5e575e",
+          "bytes": 5792,
+          "url": "https://github.com/vllm-project/vllm/blob/6c7e48049332df0c22412fc782a90518d7ff1a2e/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "url": "https://github.com/vllm-project/vllm/blob/6c7e48049332df0c22412fc782a90518d7ff1a2e/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    },
+    {
+      "repository": "triton-inference-server/server",
+      "categories": [
+        "deployment"
+      ],
+      "use": "多后端推理服务",
+      "boundary": "服务软件、后端、容器和 GPU 驱动许可分别检查。",
+      "reuse_policy": "review-code-data-weights-components",
+      "requested_repository": "triton-inference-server/server",
+      "url": "https://github.com/triton-inference-server/server",
+      "private": false,
+      "fork": false,
+      "archived": false,
+      "description": "The Triton Inference Server provides an optimized cloud and edge inferencing solution. ",
+      "default_branch": "main",
+      "head": "1751a2c84904ef21d7c424179891ab7e0f7f5a89",
+      "pushed_at": "2026-11-14T01:15:39Z",
+      "metadata_observed_at": "2026-11-15T11:44:44+08:00",
+      "sources_observed_at": "2026-11-15T11:45:07+08:00",
+      "license_signal": "BSD-3-Clause",
+      "license_class": "permissive-signal-review-text",
+      "sources": [
+        {
+          "kind": "readme",
+          "path": "README.md",
+          "blob_sha": "477028eb0348073b4fd1f8b45fb715907dbe867e",
+          "sha256": "90251fb00c1b06fbb425e00a115913e53a23d46ee840606093bcd5fccee71356",
+          "bytes": 14720,
+          "url": "https://github.com/triton-inference-server/server/blob/1751a2c84904ef21d7c424179891ab7e0f7f5a89/README.md"
+        },
+        {
+          "kind": "license",
+          "path": "LICENSE",
+          "blob_sha": "6c65d3b34dadd1404626521872085127528e9f3d",
+          "sha256": "179f37347fde9030609578b02539af12bc66b39c291de1c30d8525c6cd390036",
+          "bytes": 1490,
+          "url": "https://github.com/triton-inference-server/server/blob/1751a2c84904ef21d7c424179891ab7e0f7f5a89/LICENSE"
+        }
+      ],
+      "runtime_evaluation": "NOT_RUN",
+      "quality_gain": "UNMEASURED"
+    }
+  ],
+  "completed_at": "2026-11-15T11:46:35+08:00"
+}

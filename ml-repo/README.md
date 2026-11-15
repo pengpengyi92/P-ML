@@ -1,5 +1,15 @@
 # Machine Learning — 模型、数据与评估
 
+## Current ecosystem expansion / 2026-11-15
+
+[73个主仓库、15条路线的综合入口](ecosystem/README.md)：监督、无监督、自监督/半监督、
+强化学习，深度框架、视觉、语音、生成、概率、时序、图，以及数据、评估和部署。
+146个固定README/许可入口；逐条保留用途、canonical归属、许可/维护边界。不是全球全集，
+不镜像上游代码或数据。[报告](../report/2026-11-15-ml-ecosystem.md) ·
+[实验协议](ecosystem/EXPERIMENT_PROTOCOL.md)。
+
+## Historical detailed cards / 原有详细导读
+
 **Last reviewed:** 2026-11-14 (Asia/Shanghai). 首批 **10** 个项目视角档案；选题范围：模型方法、训练、预处理、数据切分、指标和可复现实验。
 
 这不是整个生态的全量清单、星数排名或安装建议。历史公开 PR 已重新读回；无 PR 的项目标为阅读候选，不编造贡献或复现。每篇档案都有独立收录理由、固定源码入口、学习路线、未执行练习、许可与贡献状态。

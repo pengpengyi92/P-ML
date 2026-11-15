@@ -16,6 +16,13 @@ Bring your own algorithms, research questions, replication attempts, negative re
 
 ## Explore the repository
 
+**2026-11-15 · [ML ecosystem map:73 primary repositories /15 routes](ml-repo/ecosystem/README.md)**
+covers frameworks, supervised/unsupervised/self-supervised learning, RL, vision, audio,
+probabilistic/time-series/graph learning, evaluation and serving. Source pins, rights,
+archives and task-specific experiment protocols accompany the catalog.
+[Investigation report](report/2026-11-15-ml-ecosystem.md). This is a bounded curated map,
+not all ML software or a claim to have run every library. Prior10 detailed cards remain.
+
 Start with the [10-repository ML reading guide](ml-repo/README.md): classical
 models, deep learning, LLM tools, data and evaluation. Each card states why it
 belongs in P-ML, pinned source entry points, learning questions and unrun exercises.

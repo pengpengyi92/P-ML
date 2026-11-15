@@ -1,5 +1,16 @@
 # P-ML relaunch — benchmark card
 
+## ML ecosystem catalog - 2026-11-15
+
+| Step | Evidence |
+| --- | --- |
+| Baseline |10 prior detailed cards and10 offline catalog tests; original feature-scaling experiment with3 tests. |
+| Change |73 selected canonical primary repos,15 overlapping routes,146 pinned/byte-verified README/license files, rights/maintenance notes, report and experiment protocols. Old10 are included, not73+10. |
+| Measure |Fixed offline evidence contracts; canonical de-duplication, exact source pins, timestamps, privacy, license/HTTP/integrity negative controls, links, deterministic rendering; rerun unchanged experiment separately. |
+| Result |32 catalog tests PASS (22 new,10 retained);3 original experiment tests PASS. Source files checked by Git blob and byte length, SHA256 recorded. Actual receipts in ml-repo/ecosystem/CHECKS.json. |
+| Trade-off |Bounded curation, not all ML software.2 archives;5 API-license exceptions, including1 explicitly noncommercial reference. No upstream runtime, model accuracy, speed/cost improvement, learning gain or production validation; NOT_RUN / UNMEASURED. |
+| Next Action |One pre-registered synthetic study with fixed data/splits/metric/budget, independent baseline and negative controls; judge the result rather than catalog size. |
+
 ## Repository catalog — 2026-11-14
 
 | Step | Evidence |

@@ -1,5 +1,17 @@
 # P-ML TODO
 
+## P0 - ML ecosystem expansion (2026-11-15)
+
+- [x] Collect73 canonical public primary repositories and146 byte-verified README/license pins.
+- [x] Separate15 overlapping paradigms/domain/engineering routes; no global-completeness claim.
+- [x] Preserve prior10 detailed cards, source/PR observations and the existing experiment.
+- [x] Record redirects,2 archives,5 license-classifier exceptions and MAE noncommercial limits.
+- [x] Add22 offline contracts;32 catalog tests and3 existing experiment tests PASS.
+- [x] Add report, source/search protocol, task-specific experiment guidance and broader read-only CI.
+- [ ] Publish scoped public files and verify remote Git blobs/CI.
+- [ ] P1: Select one fixed-fixture study with equal budgets, an independent baseline and negative controls.
+- [ ] P2: Add other ML branches only with specific tasks, primary sources, rights and measurable value.
+
 ## P0 - AI repository reading catalog (2026-11-14)
 
 - [x] Curate10 role-specific cards with official source pins, rights and public PR states.
