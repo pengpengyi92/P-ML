@@ -1,5 +1,13 @@
 # P-ML TODO
 
+## P1 - Kaggle community (2026-11-19)
+
+- [x] Publish and cross-link [Kaggle intake #4](https://github.com/pengpengyi92/P-ML/issues/4)
+  and [Kaggle Community Hub #5](https://github.com/pengpengyi92/P-ML/discussions/5),
+  and route from Research Exchange #3.
+- [ ] Review the first eligible Kaggle submission: check canonical source,
+  version, credit, duplicates and sharing rules; index as `NOT_RUN` if untested.
+
 ## P1 - Research Exchange (2026-11-18)
 
 - [x] Launch and verify [intake #2](https://github.com/pengpengyi92/P-ML/issues/2) and [Research Exchange #3](https://github.com/pengpengyi92/P-ML/discussions/3); cross-link and preserve generic #1.

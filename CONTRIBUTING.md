@@ -7,6 +7,13 @@ We welcome resource suggestions and your own ML research, including small algori
 3. Choose **ML / DL / RL / Combined** and **Repo / Project / Paper / Idea / Reproduction**. Include title, primary public URL (optional for an original idea), original credit, why it is useful and one starting point. Papers should state version and publication status, including whether a preprint, workshop, conference or journal entry. Disclose your relationship to the work and any AI/Agent assistance. Note license, data or access limits.
 4. For an experiment, include **question, baseline, data and split, protocol and commands, results, and limitations**. Report what you actually ran; mark proposed measurements `UNMEASURED`.
 
+For Kaggle work, use [public source intake #4](https://github.com/pengpengyi92/P-ML/issues/4)
+and [Kaggle Community Hub #5](https://github.com/pengpengyi92/P-ML/discussions/5).
+Include the canonical Kaggle artifact and version when available. When reporting
+a score, distinguish local validation, public leaderboard and final results.
+Follow the individual competition's sharing rules and applicable licenses. Use
+links to material cleared for sharing; do not repost restricted artifacts here.
+
 Use links and original commentary rather than reposting third-party assets. Submit only material you are authorized to share. Do not post private P University content, datasets, credentials, or personal information in Issues, Discussions, or PRs.
 
 Agents may help check sources, deduplicate, summarize evidence and draft a

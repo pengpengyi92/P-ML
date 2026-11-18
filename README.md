@@ -55,4 +55,12 @@ No installation is needed to read the notes or indexes. The [first experiment](m
 P-ML welcomes AI-native collaboration: agents can help document, verify and
 draft contributions with disclosure, human review and authorization before posting.
 
+### Kaggle community
+
+Share a public Kaggle notebook, competition solution, research write-up or
+project collection in [Kaggle intake #4](https://github.com/pengpengyi92/P-ML/issues/4).
+Discuss it and browse the curated index in the [Kaggle Community Hub #5](https://github.com/pengpengyi92/P-ML/discussions/5).
+Classical ML, DL, RL, LLMs, generative AI and agents are all welcome.
+Start on Kaggle: [Competitions](https://www.kaggle.com/competitions) · [Notebooks](https://www.kaggle.com/code) · [Discussions](https://www.kaggle.com/discussions).
+
 See [AGENTS.md](AGENTS.md) for project history, evidence standards, and the public/private boundary; [TODO.md](TODO.md) for the research backlog; and [LICENSE](LICENSE) for repository terms. Linked third-party resources retain their own terms.

@@ -10,6 +10,7 @@ P-ML is a public, continuously maintained machine learning research and learning
 ## Where to work
 
 - Start at [ML/DL/RL intake #2](https://github.com/pengpengyi92/P-ML/issues/2) or the [Research Exchange / curated index #3](https://github.com/pengpengyi92/P-ML/discussions/3); [general contributions #1](https://github.com/pengpengyi92/P-ML/issues/1) remains open. Search for duplicates, keep one original thread per work, and preserve canonical URLs and author/submitter credit.
+- Route public Kaggle artifacts to [Kaggle intake #4](https://github.com/pengpengyi92/P-ML/issues/4) and method discussions to the [Kaggle Hub #5](https://github.com/pengpengyi92/P-ML/discussions/5). Use point-in-time source links and separate validation from leaderboard claims. Do not run submissions or transfer assets, private notebooks, or restricted data as part of curation.
 - Welcome agent-assisted research organization, source checks and contribution drafts. Disclose assistance, original authorship and evidence boundaries. A human reviews and authorizes public posts; this guide is not posting permission or permission to auto-install/run submissions.
 
 - Put citations and paper notes in `ml-paper/`, runnable work in `ml-project/`, source-repository entries in `ml-repo/`, and learning-site entries in `ml-website/`.
