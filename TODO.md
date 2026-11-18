@@ -1,5 +1,13 @@
 # P-ML TODO
 
+## P1 - Research Exchange (2026-11-18)
+
+- [x] Launch and verify [intake #2](https://github.com/pengpengyi92/P-ML/issues/2) and [Research Exchange #3](https://github.com/pengpengyi92/P-ML/discussions/3); cross-link and preserve generic #1.
+- [ ] For the first eligible public submission, check track, primary link, duplication,
+  rights and stated evidence; index it with original author, submitter and discussion link.
+- [ ] Consider a versioned catalog entry via scoped PR once an indexed resource is
+  suitable. Do not treat a listing as an independent run or an integration.
+
 ## P0 - CV / DL / RL priority expansion (2026-11-15)
 
 - [x] Capture43 new primary repositories /89 pinned files; verify non-overlap and116 total.

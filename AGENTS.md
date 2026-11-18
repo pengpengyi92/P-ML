@@ -9,7 +9,8 @@ P-ML is a public, continuously maintained machine learning research and learning
 
 ## Where to work
 
-- Start in [Discussions](https://github.com/pengpengyi92/P-ML/discussions), or suggest a resource at [the standing call for contributions](https://github.com/pengpengyi92/P-ML/issues/1). Look for existing threads before opening a new one. Agents are welcome to help prepare proposals or PRs with human authorization; this file does not grant posting permissions.
+- Start at [ML/DL/RL intake #2](https://github.com/pengpengyi92/P-ML/issues/2) or the [Research Exchange / curated index #3](https://github.com/pengpengyi92/P-ML/discussions/3); [general contributions #1](https://github.com/pengpengyi92/P-ML/issues/1) remains open. Search for duplicates, keep one original thread per work, and preserve canonical URLs and author/submitter credit.
+- Welcome agent-assisted research organization, source checks and contribution drafts. Disclose assistance, original authorship and evidence boundaries. A human reviews and authorizes public posts; this guide is not posting permission or permission to auto-install/run submissions.
 
 - Put citations and paper notes in `ml-paper/`, runnable work in `ml-project/`, source-repository entries in `ml-repo/`, and learning-site entries in `ml-website/`.
 - `repo/README.md` is a navigation alias, not a duplicate catalog. New source cards belong in `ml-repo/`, with project-specific reasons, source pins, license/data limits and observed PR states. Run `python -m unittest discover -s tests -v`; keep the original feature-scaling experiment separately reproducible.

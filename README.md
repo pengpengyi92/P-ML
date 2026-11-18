@@ -47,8 +47,12 @@ No installation is needed to read the notes or indexes. The [first experiment](m
 
 ## Contribute
 
-- [Discussions](https://github.com/pengpengyi92/P-ML/discussions): share an algorithm, ask a research question, or discuss a paper.
-- [Call for contributions (#1)](https://github.com/pengpengyi92/P-ML/issues/1): suggest a paper, project, repository, or website. Use [Issues](https://github.com/pengpengyi92/P-ML/issues) for corrections or concrete experiment proposals.
+- [Share your ML / DL / RL work (#2)](https://github.com/pengpengyi92/P-ML/issues/2): submit a repo, public paper, research idea, replication or negative result. Choose **ML / DL / RL / Combined**.
+- [Research Exchange (#3)](https://github.com/pengpengyi92/P-ML/discussions/3): discuss the work and find the credited, curated community index. One original thread per work; cross-link instead of reposting.
+- [General call for contributions (#1)](https://github.com/pengpengyi92/P-ML/issues/1) stays open for broader suggestions. Use [Issues](https://github.com/pengpengyi92/P-ML/issues) for corrections or concrete experiment proposals.
 - Pull requests: follow [CONTRIBUTING.md](CONTRIBUTING.md). Both maintainer-curated and community submissions are welcome.
+
+P-ML welcomes AI-native collaboration: agents can help document, verify and
+draft contributions with disclosure, human review and authorization before posting.
 
 See [AGENTS.md](AGENTS.md) for project history, evidence standards, and the public/private boundary; [TODO.md](TODO.md) for the research backlog; and [LICENSE](LICENSE) for repository terms. Linked third-party resources retain their own terms.
