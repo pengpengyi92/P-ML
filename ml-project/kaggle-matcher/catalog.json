@@ -1,0 +1,53 @@
+{
+  "titanic": {
+    "summary": "Predict passenger survival from labeled passenger records.",
+    "task": "tabular-classification",
+    "learning": "supervised",
+    "modalities": ["tabular"],
+    "metric": "categorization accuracy",
+    "source": "https://www.kaggle.com/c/titanic/"
+  },
+  "house-prices-advanced-regression-techniques": {
+    "summary": "Predict residential sale prices from labeled property features.",
+    "task": "tabular-regression",
+    "learning": "supervised",
+    "modalities": ["tabular"],
+    "metric": "RMSE between log predictions and log observed sale prices",
+    "source": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview"
+  },
+  "digit-recognizer": {
+    "summary": "Classify labeled MNIST digit images stored as pixel columns.",
+    "task": "image-classification",
+    "learning": "supervised",
+    "modalities": ["image"],
+    "metric": "categorization accuracy",
+    "source": "https://www.kaggle.com/competitions/digit-recognizer/data"
+  },
+  "store-sales-time-series-forecasting": {
+    "summary": "Forecast unit sales by product family and store from dated historical data.",
+    "task": "forecasting",
+    "learning": "supervised",
+    "modalities": ["tabular"],
+    "metric": "RMSLE",
+    "source": "https://www.kaggle.com/c/store-sales-time-series-forecasting/overview/description"
+  },
+  "llm-detect-ai-generated-text": {
+    "summary": "Classify labeled essays as human-written or AI-generated; no generative LLM is required.",
+    "task": "text-classification",
+    "learning": "supervised",
+    "modalities": ["text"],
+    "metric": "ROC AUC (main competition track)",
+    "source": "https://www.kaggle.com/c/llm-detect-ai-generated-text/overview",
+    "submission_hours": 9,
+    "rules_note": "Historical code track: CPU or GPU Notebook, internet off; the separate efficiency prize was CPU-only. Recheck rules for any submission."
+  },
+  "connectx": {
+    "summary": "Submit an agent that chooses legal moves in a game simulator; search or rules can work without RL.",
+    "task": "sequential-decision",
+    "learning": "reinforcement-learning-optional",
+    "modalities": [],
+    "metric": "game outcomes used for agent rating",
+    "source": "https://www.kaggle.com/competitions/connectx",
+    "rules_note": "Submission has per-action constraints; do not treat the Notebook session budget as the agent's time limit."
+  }
+}

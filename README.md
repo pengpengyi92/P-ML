@@ -2,6 +2,20 @@
 
 An ongoing public workspace for machine learning research, reproducible experiments, and learning from first principles. Formerly **ML-Architectures**.
 
+## New application: Kaggle Competition Matcher v0.1.0
+
+Match a Kaggle competition to a learning paradigm, a first model to try, a validation
+plan, and a CPU/GPU/RAM budget. Use one of six built-in competition URLs or paste a
+new task description in English or Chinese. Runs offline with Python 3.11+, no installs.
+
+```sh
+python ml-project/kaggle-matcher/matcher.py https://www.kaggle.com/competitions/titanic
+```
+
+[Quickstart and output guide](ml-project/kaggle-matcher/README.md) ·
+[EADB acceptance and benchmark](report/2026-11-19-kaggle-matcher-eadb.md).
+Kaggle fit is a planning estimate, not an observed runtime or submission guarantee.
+
 ## From ML-Architectures to P-ML: An Open Machine Learning Research Statement
 
 **Published:** `2026-11-14T03:16:18+08:00` (Asia/Shanghai, UTC+08:00)

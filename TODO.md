@@ -1,5 +1,12 @@
 # P-ML TODO
 
+## P0 - Kaggle Competition Matcher v0.1.0 (2026-11-19)
+
+- [x] Ship and document offline URL/slug and English/Chinese description inputs, method routes, and Kaggle fit estimates.
+- [x] Add six sourced competition profiles and a fixed 24-case benchmark against the single-keyword baseline.
+- [ ] P1: Freeze at least 30 unseen competition descriptions with independent labels; report per-route errors and abstentions.
+- [ ] P1: With separate approval, profile one CPU tabular pilot and one T4 vision pilot; log peak RAM, per-device VRAM, wall time and split alongside exact configuration. No submission required.
+
 ## P1 - Kaggle community (2026-11-19)
 
 - [x] Publish and cross-link [Kaggle intake #4](https://github.com/pengpengyi92/P-ML/issues/4)
