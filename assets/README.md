@@ -1,0 +1,9 @@
+# P-ML cover art
+
+[`p-ml-research-lab.webp`](p-ml-research-lab.webp) is the 2:1 banner for the
+repository README. It was generated with the built-in image tool and converted
+to WebP without cropping or rescaling.
+
+## Generation prompt
+
+> Use case: illustration-story. Create one original wide landscape raster banner for the P-ML GitHub README, composed as a panoramic 2:1 illustration. Exactly four adorable Q-version/chibi teammates, actively working together at one common research table; not a posed lineup. One is Xiao G, a small cream-and-ginger cat with a distinctive forest-green bandana with a single simple letter G, pointing at a shared open experiment notebook. The other three are distinctly designed friendly toy-like robot agents with large expressive eyes and solid readable chest badge labels, left to right “ML”, “DL”, “RL” (spell exactly those capital letters): warm teal ML agent studies a simple scatterplot on a laptop; plum DL agent adjusts a tiny neural network diagram; warm orange RL agent moves a marker through a little grid maze. The cat and robots share the same table and interact with each other, one tight composition. Storybook editorial illustration: softly textured hand-painted gouache, clean contours, calm mint and sunlit golden palette with dark green, warm terracotta and small lilac accents, warmly lit little open research lab, friendly and unpretentious. Wide framing, clear character silhouettes and visible faces; keep all four full faces, badge letters, and hands comfortably within the central band of the frame with room at left and right, for readability at GitHub/mobile sizes. Restrained backdrop and no excessive charts or decorative clutter. No title, captions, other text, branding, borders, watermark, additional cats or robots; the README supplies its title separately.
