@@ -1,4 +1,8 @@
-# P-ML
+# P-ML: The Open ML, DL & RL Research Lab
+
+<p align="center">
+  <img src="assets/p-ml-research-lab.webp" alt="Xiao G the cat and the ML, DL, and RL robot agents working together at a research table" width="100%">
+</p>
 
 An ongoing public workspace for machine learning research, reproducible experiments, and learning from first principles. Formerly **ML-Architectures**.
 
