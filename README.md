@@ -14,7 +14,9 @@ python ml-project/kaggle-matcher/matcher.py https://www.kaggle.com/competitions/
 
 [Quickstart and output guide](ml-project/kaggle-matcher/README.md) ·
 [EADB acceptance and benchmark](report/2026-11-19-kaggle-matcher-eadb.md).
-Kaggle fit is a planning estimate, not an observed runtime or submission guarantee.
+Two Kaggle pilots ran without competition submissions: **Titanic CPU** took 5.35 s
+(181 MiB peak process RAM); **Digit Recognizer T4 CNN** took 29.88 s (1.49 GiB RAM,
+215 MiB sampled VRAM). These are fixed-workload measurements, not runtime promises.
 
 ## From ML-Architectures to P-ML: An Open Machine Learning Research Statement
 

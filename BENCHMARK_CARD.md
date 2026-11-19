@@ -7,9 +7,9 @@
 | Baseline | First matching English keyword selects one task. No method, paradigm or resource output. |
 | Change | Separate objective, learning paradigm and model family; map to baseline and optional next workload; compare resource ranges to dated Kaggle planning budgets. |
 | Measure | Task exact match versus baseline on 24 frozen development descriptions; paradigm exact match for matcher only. Include unsupported, ambiguous and cross-language inputs. |
-| Result | Baseline 10/24 task matches; matcher 24/24 task and 24/24 paradigm matches on this development set. [Reproduction and EADB](report/2026-11-19-kaggle-matcher-eadb.md). |
-| Trade-off | Transparent rules and no runtime dependencies, but narrow language coverage and no unseen-test evidence. Kaggle CPU/GPU/RAM fit, model quality, and user decision quality are **UNMEASURED** in the field. |
-| Next Action | Blind-label at least 30 unseen prompts; separately instrument one CPU and one GPU pilot before treating estimates as measured. |
+| Result | Baseline 10/24 task matches; matcher 24/24 task and 24/24 paradigm matches on this development set. [Two Kaggle pilots](ml-project/kaggle-matcher/pilots/README.md) confirm fit for those configurations only: Titanic 5.35 s / 181 MiB RAM; Digit 29.88 s / 1.49 GiB RAM / 215 MiB maximum sampled per-T4 VRAM. |
+| Trade-off | Generic ranges substantially overestimated these tiny runs. No held-out routing, broader size calibration, model superiority or user decision quality demonstrated. [EADB](report/2026-11-19-kaggle-matcher-eadb.md). |
+| Next Action | Blind-label at least 30 unseen prompts; profile multiple data sizes and accelerators before recalibrating or recommending hardware purchases. |
 
 ## CV / DL / RL focus expansion - 2026-11-15
 

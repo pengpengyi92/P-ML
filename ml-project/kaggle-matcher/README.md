@@ -41,8 +41,8 @@ with insufficient signals returns `unknown` without guessing a task or hardware.
   matched terms, not an asserted official metric. With both slug and description,
   the latter selects the route; any known metric/rules still describe the official contest.
 - `plans.baseline` and optional `plans.next` carry CPU core targets, host RAM and
-  **per-device** VRAM in GiB, and hours. These are small-pilot planning ranges, not
-  measured requirements. If you know better, use `--cpu-cores`, `--ram-gib`,
+  **per-device** VRAM in GiB, and hours. These conservative planning ranges are
+  not measured minimum requirements. If you know better, use `--cpu-cores`, `--ram-gib`,
   `--vram-gib`, or `--hours` on `--plan baseline` (default) or `--plan next`.
 - `likely_for_pilot` means every range fits the planning envelope;
   `pilot_required` means a range crosses it; `above_planning_budget` means a lower
@@ -66,6 +66,8 @@ python -m unittest discover -s tests -p test_kaggle_matcher.py -v
 python ml-project/kaggle-matcher/benchmark.py
 ```
 
-See the [EADB report](../../report/2026-11-19-kaggle-matcher-eadb.md) for the
-test protocol, known limitations, and rollback. Neither the hardware sizing nor
-the model recommendations have been validated by running Kaggle workloads.
+See [Kaggle pilot measurements](pilots/README.md) and the
+[EADB report](../../report/2026-11-19-kaggle-matcher-eadb.md) for test protocol,
+observed metrics, limitations, and rollback. Both tested plans ran within Kaggle's
+planning budgets, well below the generic RAM/time ranges. The CLI does not train or
+measure the workload in a user's invocation and still marks that as `UNMEASURED`.
